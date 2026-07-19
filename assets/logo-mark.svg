@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Responsa">
+  <!-- Simplified mark for favicons, app icons and anything under ~48px.
+       Sparkles, hands, cheeks and the second heart are dropped on purpose:
+       at small sizes they turn to mush. Strokes are heavier so the silhouette
+       survives. -->
+  <defs>
+    <linearGradient id="mBody" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2E9BE0"/>
+      <stop offset="100%" stop-color="#5FBF3E"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#1B3A4B" stroke-width="3.2" stroke-linejoin="round">
+    <!-- cape -->
+    <path d="M14 30 C 8 34, 4 40, 2 46 C 8 45, 13 46, 17 49 C 17 42, 16 35, 14 30 Z"
+          fill="#E8483A"/>
+    <!-- body -->
+    <rect x="12" y="9" width="42" height="31" rx="13" fill="url(#mBody)"/>
+    <rect x="17" y="13.5" width="32" height="22" rx="9" fill="#FFFFFF"/>
+    <!-- tail -->
+    <path d="M25 36 C 24 44, 22 49, 18 55 C 26 51, 32 45, 34 38 Z" fill="#3FA9DC"/>
+    <!-- heart -->
+    <path d="M53 26 c -3.5 -4, -10 -2, -10 3.5 c 0 4.8, 6.2 8.8, 10 11.5
+             c 3.8 -2.7, 10 -6.7, 10 -11.5 c 0 -5.5, -6.5 -7.5, -10 -3.5 Z"
+          fill="#E8434A" transform="translate(-6 -2) scale(0.86) translate(8 4)"/>
+  </g>
+  <!-- eyes and smile, no stroke so they stay crisp when scaled down -->
+  <g stroke="none" fill="#12232E">
+    <ellipse cx="27" cy="22" rx="3.4" ry="4"/>
+    <ellipse cx="40" cy="22" rx="3.4" ry="4"/>
+  </g>
+  <path d="M31 28 c 1.4 3.4, 4.6 3.4, 6 0 Z" fill="#E8434A" stroke="#1B3A4B"
+        stroke-width="1.6" stroke-linejoin="round"/>
+</svg>
