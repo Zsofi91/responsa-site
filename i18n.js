@@ -81,6 +81,20 @@ const STRINGS = {
     "testi.h2": "What our customers say.",
     "testi.soon": "We'll publish our first real customer testimonials here soon — with name, place, and concrete numbers. (For example: “our response rate went from 12% to 100% in 60 days.”)",
 
+    /* ---------- Instagram add-on (coming soon) ---------- */
+    "addon.eyebrow": "Coming soon",
+    "addon.h2": "Not just reviews — your Instagram too.",
+    "addon.lede": "An add-on we're building: posts and stories made from your own photos, and you still approve every single one. It's not live yet — join the waitlist and we'll tell you when it is.",
+    "addon.s1.h": "Your photos, your posts",
+    "addon.s1.p": "Posts and stories are built from your own photos — never stock images. It looks like your place because it is your place.",
+    "addon.s2.h": "You approve everything",
+    "addon.s2.p": "Every post comes to you in chat, on your phone. One tap approves it — nothing goes out until you say so.",
+    "addon.s3.h": "Ask anytime",
+    "addon.s3.p": "Need something tonight? Write “tonight, buy-one-get-one beer” and a ready-to-post draft comes back for your approval.",
+    "addon.chip1": "Post ready",
+    "addon.chip2": "Approved",
+    "addon.cta": "Join the waitlist",
+
     /* ---------- pricing ---------- */
     "price.eyebrow": "Pricing",
     "price.h2": "Clear pricing, no surprises.",
