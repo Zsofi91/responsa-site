@@ -40,6 +40,9 @@ from nav/footer until the add-on launches.
   never name Telegram/Viber/WhatsApp.
 - Pricing shown on this site is the source of truth for the site — don't
   import numbers from anywhere else without Zsófi's say-so.
+- The canonical site URL for the MVP is
+  `https://responsa.responsa-site.workers.dev` — use it for every absolute
+  URL (og:url, canonical, share links) until a custom domain replaces it.
 
 ## Workflow
 - NEVER commit or push to `main`. Feature branches + PRs only; Zsófi reviews
