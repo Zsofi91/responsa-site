@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="hu">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Responsa — every Google review answered, in your voice</title>
-<meta name="description" content="We learn how you talk to your guests, draft a reply to every new Google review, and send it to you to approve. Setup takes two clicks.">
+<title>Responsa — több vélemény, és mindegyikre válasz a te hangodon</title>
+<meta name="description" content="Segítünk, hogy a vendégeid értékelést írjanak (QR az asztalon, link a számlán), és minden új Google-értékelésre megírjuk a választ a te hangodon — semmi nem megy ki a jóváhagyásod nélkül.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,21 +13,21 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+<a class="skip" href="#main" data-i18n="skip">Ugrás a tartalomra</a>
 
 <div class="wrap">
 
   <header class="nav">
-    <a class="mark" href="/" aria-label="Responsa — home">
+    <a class="mark" href="/" aria-label="Responsa — főoldal">
       <img class="mark-mascot" src="assets/logo-mark.svg" alt="" width="34" height="34">
       <span class="wordmark">Responsa</span>
     </a>
     <div class="nav-r">
-      <div class="langtoggle" role="group" aria-label="Language">
-        <button type="button" data-lang="en" aria-pressed="true">EN</button>
-        <button type="button" data-lang="hu" aria-pressed="false">HU</button>
+      <div class="langtoggle" role="group" aria-label="Nyelv">
+        <button type="button" data-lang="hu" aria-pressed="true">HU</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
-      <a class="btn btn-dark" href="#start" data-i18n="nav.cta">Get started</a>
+      <a class="btn btn-dark" href="#start" data-i18n="nav.cta">Kezdjük el</a>
     </div>
   </header>
 
@@ -36,150 +36,217 @@
     <!-- ---------- hero ---------- -->
     <section class="hero">
       <div>
-        <h1><span data-i18n="hero.h1a">Every Google review answered — </span><span class="grad-text" data-i18n="hero.h1b">in your voice</span>.</h1>
-        <p class="hero-sub" data-i18n="hero.sub">We learn how you talk to your guests, draft a reply to
-          every new review, and send it to you to approve. Nothing goes live without your say-so.</p>
-        <a class="btn btn-grad" href="#start" data-i18n="hero.cta">Get started</a>
-        <p class="hero-mini" data-i18n="hero.mini">No password. No owner access. Setup takes two clicks.</p>
+        <h1><span data-i18n="hero.h1a">Több értékelés — és mindegyikre válasz, </span><span class="grad-text" data-i18n="hero.h1b">a te hangodon</span>.</h1>
+        <p class="hero-sub" data-i18n="hero.sub">Segítünk, hogy több vendéged írjon értékelést — QR-kód az
+          asztalon, link a számlán —, az újakra pedig mi írjuk meg a választ. Amíg rá nem bólintasz, semmi
+          nem kerül ki.</p>
+        <a class="btn btn-grad" href="#start" data-i18n="hero.cta">Kezdjük el</a>
+        <p class="hero-mini" data-i18n="hero.mini">Jelszó nélkül. Tulajdonosi jog nélkül. A beállítás két kattintás.</p>
+        <p class="hero-mini" data-i18n="hero.phone">Nem kell új rendszerbe belépned — minden a telefonodra érkezik.</p>
       </div>
 
       <div class="art">
         <img class="hero-mascot" src="assets/logo-mascot.svg" width="420" height="300"
-             alt="The Responsa mascot, a caped speech bubble holding hearts">
-        <div class="chip chip-1"><span class="stars">★★★★★</span><span data-i18n="chip.new">New review</span></div>
-        <div class="chip chip-2"><span class="tick">✓</span><span data-i18n="chip.ok">Reply approved</span></div>
+             alt="A Responsa kabala, egy köpenyes szövegbuborék szívekkel a kezében">
+        <div class="chip chip-1"><span class="stars">★★★★★</span><span data-i18n="chip.new">Új értékelés</span></div>
+        <div class="chip chip-2"><span class="tick">✓</span><span data-i18n="chip.ok">Válasz jóváhagyva</span></div>
       </div>
     </section>
 
     <!-- ---------- how it works ---------- -->
     <section class="section">
-      <p class="eyebrow" data-i18n="how.eyebrow">How it works</p>
-      <h2 data-i18n="how.h2">Three steps, once. Then it runs.</h2>
+      <p class="eyebrow" data-i18n="how.eyebrow">Hogyan működik</p>
+      <h2 data-i18n="how.h2">Négy lépés az elején, aztán megy magától.</h2>
       <div class="steps">
         <div class="step">
           <div class="step-ic" aria-hidden="true">🔑</div>
-          <h3 data-i18n="how.s1.h">Add us as a manager</h3>
-          <p><span data-i18n="how.s1.p">Two clicks in your Google Business Profile. Manager access is all
-            it takes to reply — we never ask for your password or owner rights.</span>
-            <a href="guide.html" data-i18n="how.s1.link">See the guide</a></p>
+          <h3 data-i18n="how.s1.h">Hozzáadsz kezelőként</h3>
+          <p><span data-i18n="how.s1.p">Két kattintás a Google-profilodon. A válaszoláshoz a kezelői szerep
+            is elég — jelszót és tulajdonosi jogot soha nem kérünk.</span>
+            <a href="guide.html" data-i18n="how.s1.link">Mutatjuk lépésről lépésre</a></p>
+        </div>
+        <div class="step">
+          <div class="step-ic" aria-hidden="true">📲</div>
+          <h3 data-i18n="how.s2.h">A vendég beolvassa a QR-kódot vagy a linket</h3>
+          <p data-i18n="how.s2.p">Egyetlen koppintás, és már a Google-értékelő oldaladon van — az
+            asztalnál, a számlán vagy a kijáratnál. Nincs applikáció, nincs regisztráció.</p>
         </div>
         <div class="step">
           <div class="step-ic" aria-hidden="true">✍️</div>
-          <h3 data-i18n="how.s2.h">We learn your voice</h3>
-          <p data-i18n="how.s2.p">We read your past replies and your menu or service list: what you sell,
-            what you call it, how you greet people, how you sign off.</p>
+          <h3 data-i18n="how.s3.h">Megírjuk a választ a te hangodon</h3>
+          <p data-i18n="how.s3.p">Átnézzük a korábbi válaszaidat és a kínálatodat, és minden új értékelésre
+            elkészítjük a választ — úgy, ahogy te is megírnád.</p>
         </div>
         <div class="step">
           <div class="step-ic" aria-hidden="true">✅</div>
-          <h3 data-i18n="how.s3.h">You approve every reply</h3>
-          <p data-i18n="how.s3.p">Each draft comes to you first. One tap and it's live on Google.
-            Nothing publishes without you.</p>
+          <h3 data-i18n="how.s4.h">Te hagysz jóvá minden választ</h3>
+          <p data-i18n="how.s4.p">Minden választ előbb neked mutatunk meg. Egy koppintás, és már kint is
+            van a Google-on. Nélküled semmi nem jelenik meg.</p>
         </div>
+      </div>
+    </section>
+
+    <!-- ---------- grow your reviews (the safe way) ---------- -->
+    <section class="section">
+      <p class="eyebrow" data-i18n="grow.eyebrow">Több értékelés</p>
+      <h2 data-i18n="grow.h2">Több értékelés — a biztonságos úton.</h2>
+      <p class="lede" data-i18n="grow.lede">QR-kártyát kapsz az asztalra, és egy rövid linket, amit a
+        számlára, a nyugtára vagy az e-mail-aláírásodba tehetsz. A vendég egyetlen koppintással a
+        Google-értékelő oldaladon van — legyen szó étteremről, szalonról vagy rendelőről. Nincs
+        applikáció, nincs regisztráció.</p>
+
+      <div class="callout">
+        <span class="callout-ic" aria-hidden="true">🛡️</span>
+        <p><strong data-i18n="grow.comp.h">Soha nem válogatunk.</strong>
+          <span data-i18n="grow.comp.p"> Egyes eszközök eltitkolják az elégedetlen vendégek véleményét a
+          Google elől („review gating"). Ez sérti a Google szabályzatát, és akár hónapok értékeléseit is
+          törölheti, vagy felfüggesztheti a profilodat. A Responsa soha nem válogat — minden vendég
+          ugyanazt a linket kapja, a negatív visszajelzés pedig külön, egyenesen hozzád jut. A profiloddal
+          nem játszunk.</span></p>
+      </div>
+
+      <div class="callout">
+        <span class="callout-ic" aria-hidden="true">📈</span>
+        <p><span data-i18n="grow.why">Az értékelések száma az egyik legerősebb helyi rangsorolási tényező —
+          és a vendégek 38%-a szóba sem vesz egy 4 csillag alatti helyet.</span>
+          <a href="https://www.brightlocal.com/research/local-consumer-review-survey/"
+             rel="nofollow noopener" target="_blank" data-i18n="grow.src">BrightLocal, helyi fogyasztói kutatás</a></p>
       </div>
     </section>
 
     <!-- ---------- why it matters ---------- -->
     <section class="section">
-      <p class="eyebrow" data-i18n="why.eyebrow">Why it matters</p>
-      <h2 data-i18n="why.h2">Replying isn't politeness. It's traffic.</h2>
-      <p class="lede" data-i18n="why.lede">People read what you wrote back to someone else before they
-        decide where to eat. Google reads it too.</p>
+      <p class="eyebrow" data-i18n="why.eyebrow">Miért számít</p>
+      <h2 data-i18n="why.h2">A válaszolás nem csak udvariasság — vendéget hoz.</h2>
+      <p class="lede" data-i18n="why.lede">A vendég elolvassa, mit írtál vissza másoknak, mielőtt eldönti,
+        hova üljön be. És a Google is olvassa.</p>
 
       <div class="stats">
         <div class="stat">
           <div class="stat-big">93%</div>
-          <p data-i18n="why.st1">of people expect a business to respond to their review.</p>
+          <p data-i18n="why.st1">ennyien várják el, hogy egy vállalkozás válaszoljon az értékelésükre.</p>
           <p class="src"><a href="https://www.brightlocal.com/research/local-consumer-review-survey-2024/"
-             rel="nofollow noopener" target="_blank" data-i18n="why.src1">BrightLocal, 1,141 US consumers, 2024</a></p>
+             rel="nofollow noopener" target="_blank" data-i18n="why.src1">BrightLocal, 1141 amerikai fogyasztó, 2024</a></p>
         </div>
         <div class="stat">
           <div class="stat-big">80%</div>
-          <p data-i18n="why.st2">say they're likely to use a business that answers all of its reviews.</p>
+          <p data-i18n="why.st2">mondja, hogy szívesebben választ olyan helyet, amelyik minden értékelésre válaszol.</p>
           <p class="src"><a href="https://www.brightlocal.com/research/local-consumer-review-survey/"
-             rel="nofollow noopener" target="_blank" data-i18n="why.src2">BrightLocal, 1,002 US consumers, 2026</a></p>
+             rel="nofollow noopener" target="_blank" data-i18n="why.src2">BrightLocal, 1002 amerikai fogyasztó, 2026</a></p>
         </div>
         <div class="stat">
           <div class="stat-big">81%</div>
-          <p data-i18n="why.st3">expect to hear back within a week of leaving a review.</p>
+          <p data-i18n="why.st3">egy héten belül vár választ az értékelésére.</p>
           <p class="src"><a href="https://www.brightlocal.com/research/local-consumer-review-survey/"
-             rel="nofollow noopener" target="_blank" data-i18n="why.src2">BrightLocal, 1,002 US consumers, 2026</a></p>
+             rel="nofollow noopener" target="_blank" data-i18n="why.src2">BrightLocal, 1002 amerikai fogyasztó, 2026</a></p>
+        </div>
+        <div class="stat">
+          <div class="stat-big">73%</div>
+          <p data-i18n="why.st4">csak az elmúlt egy hónap értékeléseit nézi — ezért számít, hogy folyamatosan érkezzenek újak.</p>
+          <p class="src"><a href="https://www.brightlocal.com/research/local-consumer-review-survey/"
+             rel="nofollow noopener" target="_blank" data-i18n="why.src4">BrightLocal, 1002 amerikai fogyasztó, 2026</a></p>
         </div>
       </div>
 
       <div class="callout">
         <span class="callout-ic" aria-hidden="true">🔍</span>
-        <p><span data-i18n="why.callout1">Google counts your reviews when it decides how prominent your
-          business is — and says plainly that</span>
-          <strong data-i18n="why.callout2"> "positive reviews and helpful replies can help your business
-          stand out."</strong>
-          <span data-i18n="why.callout3"> A reply that names the actual dish someone ordered is how you
-          prove you read it.</span>
+        <p><span data-i18n="why.callout1">A Google beleszámítja az értékeléseidet abba, mennyire számítasz
+          ismertnek — és egyértelműen kimondja, hogy</span>
+          <strong data-i18n="why.callout2"> „a pozitív értékelések és a segítőkész válaszok segíthetnek kitűnni".</strong>
+          <span data-i18n="why.callout3"> Ha a válasz néven nevezi, mit rendelt a vendég, azzal bizonyítod,
+          hogy tényleg elolvastad.</span>
           <a href="https://support.google.com/business/answer/7091" rel="nofollow noopener"
-             target="_blank" data-i18n="why.calloutsrc">Google Business Profile Help</a></p>
+             target="_blank" data-i18n="why.calloutsrc">Google Cégprofil Súgó</a></p>
       </div>
     </section>
 
-    <!-- ---------- social proof ---------- -->
+    <!-- ---------- example replies (illustrations) ---------- -->
     <section class="section">
-      <p class="eyebrow" data-i18n="proof.eyebrow">Who we work with</p>
-      <h2 data-i18n="proof.h2">Two places in Szeged, every day.</h2>
+      <p class="eyebrow" data-i18n="proof.eyebrow">Példa</p>
+      <h2 data-i18n="proof.h2">Nézd meg, milyen választ írunk.</h2>
+      <p class="lede" data-i18n="proof.note">Szemléltető példák valódi értékelések alapján — nem
+        ügyfélvélemények.</p>
       <div class="proof">
         <div class="pc">
           <div class="pc-biz">🥯 Szeged Bagel</div>
-          <div class="pc-loc" data-i18n="proof.p1.loc">Szeged · restaurant</div>
+          <div class="pc-loc" data-i18n="proof.p1.loc">Szeged · étterem</div>
           <div class="pc-review">
             <span class="stars">★★★★★</span>
-            <p data-i18n="proof.p1.review">"The food was great, really good quality ingredients. The staff
-              is very nice. They're pet friendly. Our dog had a lovely time, he even got some turkey
-              ham ❤️ I highly recommend this place."</p>
-            <p class="pc-who" data-i18n="proof.p1.who">Cristina P. · June 2026</p>
+            <p data-i18n="proof.p1.review">„Nagyon finom bagelek, hangulatos hely és extra kedves
+              kiszolgálás. Mindenkinek szívből ajánlom!"</p>
+            <p class="pc-who" data-i18n="proof.p1.who">Gábor V. · 2026. július</p>
           </div>
           <div class="pc-reply">
-            <div class="lbl" data-i18n="proof.replylabel">Reply written by Responsa</div>
-            <p data-i18n="proof.p1.reply">Dear Cristina! 😊 Thank you for the kind words! We are so happy
-              your dog had a great time too, pets are always welcome here. Next visit try our limited
-              summer Bagel Burger with a cold smoothie! See you soon! ❤️🐕🥯</p>
+            <div class="lbl" data-i18n="proof.replylabel">A választ a Responsa írta</div>
+            <p data-i18n="proof.p1.reply">Kedves Gábor! 😊 Köszönjük szépen a sok jó szót és főleg az
+              ajánlást, ez nagyon jólesett az egész csapatnak! Nyáron ugorj be a limitált Bagel Burgerünkért
+              is. Reméljük, hamarosan újra látunk! 🥯✨</p>
           </div>
         </div>
         <div class="pc">
           <div class="pc-biz">🍝 The Pasta club</div>
-          <div class="pc-loc" data-i18n="proof.p2.loc">Szeged · restaurant</div>
+          <div class="pc-loc" data-i18n="proof.p2.loc">Szeged · étterem</div>
           <div class="pc-review">
             <span class="stars">★★★★★</span>
-            <p data-i18n="proof.p2.review">"best pasta place in town &lt;3 the guys that work there are
-              really nice and polite as well thank you"</p>
-            <p class="pc-who" data-i18n="proof.p2.who">Taya V. · June 2026</p>
+            <p data-i18n="proof.p2.review">„Legjobb hely egy gyors kajára, az itt dolgozó emberek kedvesek
+              és aranyosak, nagyon ajánlom 🔥🔥"</p>
+            <p class="pc-who" data-i18n="proof.p2.who">Bence H. · 2026. május</p>
           </div>
           <div class="pc-reply">
-            <div class="lbl" data-i18n="proof.replylabel">Reply written by Responsa</div>
-            <p data-i18n="proof.p2.reply">Dear Taya! 😊 Thank you so much, best pasta place in town is a
-              title we will guard proudly! The guys were really happy about the kind words. Next time try
-              the Shrimp Pasta, it is something special! See you soon! 🍝✨</p>
+            <div class="lbl" data-i18n="proof.replylabel">A választ a Responsa írta</div>
+            <p data-i18n="proof.p2.reply">Kedves Bence! 😊 Köszönjük szépen a kedves szavakat! Örülünk, hogy
+              nálunk találtad meg a legjobb gyors kaját. Legközelebb a Chicky Shroomot is kóstold meg! Ha
+              erre jársz, ugorj be bátran! 🔥🍝</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ---------- pricing ---------- -->
-    <section class="section-tight">
-      <div class="pricing">
-        <p class="eyebrow" data-i18n="price.eyebrow">Pricing</p>
-        <h2 data-i18n="price.h2">Every place gets a different number of reviews.</h2>
-        <p class="lede" data-i18n="price.lede">So we quote per business rather than posting a number that
-          fits nobody. Tell us where you are and we'll send a price the same week.</p>
-        <a class="btn btn-grad" href="#start" data-i18n="price.cta">Ask for a price</a>
+    <!-- ---------- testimonials (awaiting real quotes) ---------- -->
+    <section class="section">
+      <p class="eyebrow" data-i18n="testi.eyebrow">Vélemények</p>
+      <h2 data-i18n="testi.h2">Amit az ügyfeleink mondanak.</h2>
+      <div class="callout testi-soon">
+        <span class="callout-ic" aria-hidden="true">💬</span>
+        <p data-i18n="testi.soon">Az első valódi ügyfélvéleményeket hamarosan itt tesszük közzé — névvel,
+          hellyel és konkrét számokkal. (Például: „12%-ról 100%-ra nőtt a válaszarányunk 60 nap alatt.")</p>
       </div>
+    </section>
+
+    <!-- ---------- pricing ---------- -->
+    <section class="section">
+      <p class="eyebrow" data-i18n="price.eyebrow">Árak</p>
+      <h2 data-i18n="price.h2">Átlátható ár, meglepetések nélkül.</h2>
+      <p class="lede" data-i18n="price.lede">Egy ár, telephelyenként — és minden benne van, a QR-kódos
+        értékelésgyűjtéssel együtt.</p>
+
+      <div class="priceone">
+        <div class="tier-price" data-i18n="price.amount">12 900 <small>Ft/hó</small></div>
+        <div class="tier-per" data-i18n="price.perloc">telephelyenként</div>
+        <ul>
+          <li data-i18n="price.f1">Válasz minden értékelésre, a te hangodon</li>
+          <li data-i18n="price.f2">QR-kód és rövid link az értékelésgyűjtéshez</li>
+          <li data-i18n="price.f3">Külön csatorna a negatív visszajelzéseknek</li>
+          <li data-i18n="price.f4">Te hagysz jóvá minden választ</li>
+          <li data-i18n="price.f5">Minden a telefonodra érkezik</li>
+        </ul>
+        <a class="btn btn-grad" href="#start" data-i18n="price.cta">Ingyenes próba</a>
+        <p class="tier-foot" data-i18n="price.foot">14 napig ingyen, bankkártya nélkül.</p>
+      </div>
+
+      <p class="price-multi"><span data-i18n="price.multi">Több telephelyed van?</span>
+        <a href="#start" data-i18n="price.multilink">Kérj rá egyedi árat.</a></p>
     </section>
 
     <!-- ---------- form ---------- -->
     <section class="section" id="start">
-      <p class="eyebrow" data-i18n="form.eyebrow">Get started</p>
-      <h2 data-i18n="form.h2">Let's look at your profile.</h2>
-      <p class="lede" data-i18n="form.lede">We'll write your first few replies before you pay anything.
-        If you don't like them, that's the end of it.</p>
+      <p class="eyebrow" data-i18n="form.eyebrow">Kezdjük el</p>
+      <h2 data-i18n="form.h2">Nézzük meg a profilodat.</h2>
+      <p class="lede" data-i18n="form.lede">Az első néhány választ még fizetés előtt megírjuk. Ha nem
+        tetszik, ennyi volt.</p>
       <div class="formwrap">
         <div class="form-fallback" data-i18n="form.placeholder">
-          Tally form embeds here — waiting on the form ID.
+          Ide kerül a Tally űrlap — még várunk az azonosítóra.
         </div>
       </div>
     </section>
@@ -187,11 +254,13 @@
   </main>
 
   <footer class="footer">
-    <div data-i18n="footer.copy">© 2026 Responsa · Szeged, Hungary</div>
+    <div data-i18n="footer.copy">© 2026 Responsa · Szeged</div>
     <nav aria-label="Footer">
-      <a href="guide.html" data-i18n="footer.guide">Setup guide</a>
-      <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
-      <a href="#start" data-i18n="footer.contact">Contact</a>
+      <a href="guide.html" data-i18n="footer.guide">Útmutató</a>
+      <a href="aszf.html" data-i18n="footer.terms">ÁSZF</a>
+      <a href="privacy.html" data-i18n="footer.privacy">Adatkezelés</a>
+      <a href="impresszum.html" data-i18n="footer.impressum">Impresszum</a>
+      <a href="#start" data-i18n="footer.contact">Kapcsolat</a>
     </nav>
   </footer>
 
