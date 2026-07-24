@@ -120,8 +120,10 @@ const STRINGS = {
     /* ---------- form ---------- */
     "form.eyebrow": "Get started",
     "form.h2": "Let's look at your profile.",
-    "form.lede": "We'll write your first few replies before you pay anything. If you don't like them, that's the end of it.",
+    "form.lede": "We'll write your first few replies before you pay anything. If you don't like them, that's the end of it. Interested in the Instagram add-on? Join the waitlist too — we'll let you know when it launches.",
     "form.placeholder": "Tally form embeds here — waiting on the form ID.",
+    "form.mailtonote": "The form is still being built — in the meantime, just email us:",
+    "form.mailtocta": "Email us: hello@responsa.hu",
 
     /* ---------- footer ---------- */
     "footer.copy": "© 2026 Responsa · Szeged, Hungary",
@@ -190,6 +192,29 @@ const STRINGS = {
     "guide.help.p": " Send us a message and we'll do it together on a call. This step trips people up more often than anything else, and it's a five-minute fix.",
     "guide.help.link": "Get in touch",
 
+    /* ---------- guide-insta (add-on onboarding — unlinked stub) ---------- */
+    "ginsta.h1": "How the Instagram add-on will work",
+    "ginsta.lede": "Coming soon: posts and stories made from your own photos, and you approve every single one. When it launches it's just three steps — here's a preview.",
+    "ginsta.soon.h": "This add-on isn't available yet.",
+    "ginsta.soon.p": " This page previews how it will work. Join the waitlist and we'll tell you the moment it launches.",
+    "ginsta.soon.link": "Notify me",
+    "ginsta.steps.h": "Three steps and it's running",
+    "ginsta.s1.h": "You share a photo folder with us",
+    "ginsta.s1.p": "You share a Google Drive folder with our service account — we send you the exact address at registration. Viewer access is enough, and you can unshare it at any time.",
+    "ginsta.s2.h": "You connect your Instagram account",
+    "ginsta.s2.p": "We walk you through the official Meta connection. It needs a professional (Business or Creator) Instagram account — we'll show you how to switch if you're not on one yet.",
+    "ginsta.s3.h": "You approve everything in chat",
+    "ginsta.s3.p": "Every post and story arrives as a preview on your phone. One tap approves it — and you can ask for a change, or a new post, anytime.",
+    "ginsta.ctrl.h": "The same principle as with replies:",
+    "ginsta.ctrl.p": " you're in control. Nothing goes out without you, and you can revoke access at any time.",
+    "ginsta.faq.h": "Common questions",
+    "ginsta.faq.q1": "Do you need my Instagram password?",
+    "ginsta.faq.a1": "No. The connection is made through the official Meta link — we never ask for or store your password, and you can revoke access at any time.",
+    "ginsta.faq.q2": "Can anything go out without me?",
+    "ginsta.faq.a2": "No. Every post and story is shown to you first, and only goes out once you've approved it.",
+    "ginsta.faq.q3": "Can I stop at any time?",
+    "ginsta.faq.a3": "Yes. Disconnect your Instagram account and unshare the folder — that's it. Posts already published stay yours.",
+
     /* ---------- privacy ---------- */
     "priv.h1": "Privacy",
     "priv.lede": "What we collect, why we have it, who else sees it, and how to make us delete it. Last updated 19 July 2026.",
@@ -241,6 +266,18 @@ const STRINGS = {
 
     "priv.sec.h": "How we hold it",
     "priv.sec.p": "Customer records sit in a private file on a server we control, readable only by the account that runs the service. We don't keep your Google password, because we never have it — access works through Google's own permission system and you can withdraw it yourself.",
+
+    "priv.insta.h": "Instagram add-on (coming soon)",
+    "priv.insta.intro": "The Instagram add-on we're building involves a little more data than the above. It's not available yet — this will only apply to customers who explicitly connect it later.",
+    "priv.insta.photos.h": "Photos and labelling",
+    "priv.insta.photos.i1": "You share a photo folder (Google Drive) with our service account; we send you the exact address at registration, and you can unshare it at any time.",
+    "priv.insta.photos.i2": "An AI model (Google Gemini) reviews the photos and labels what's in them — so we can pick the right image for each post.",
+    "priv.insta.photos.i3": "We store those labels and copies of the photos for as long as you're a customer.",
+    "priv.insta.publish.h": "Publishing",
+    "priv.insta.publish.i1": "Approved posts and stories go out through the official Instagram (Meta) API to your connected professional account.",
+    "priv.insta.publish.i2": "We keep a journal of what we published and when.",
+    "priv.insta.ok.h": "The same principle as everywhere else:",
+    "priv.insta.ok.p": " you approve every post before it goes live; we never sell your photos or share them for advertising. Turning the add-on off is simple: unshare the folder and disconnect your Instagram account.",
 
     /* ---------- terms (ÁSZF) ---------- */
     "aszf.h1": "Terms of Service",
