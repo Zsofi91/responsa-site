@@ -242,6 +242,18 @@ const STRINGS = {
     "priv.sec.h": "How we hold it",
     "priv.sec.p": "Customer records sit in a private file on a server we control, readable only by the account that runs the service. We don't keep your Google password, because we never have it — access works through Google's own permission system and you can withdraw it yourself.",
 
+    "priv.insta.h": "Instagram add-on (coming soon)",
+    "priv.insta.intro": "The Instagram add-on we're building involves a little more data than the above. It's not available yet — this will only apply to customers who explicitly connect it later.",
+    "priv.insta.photos.h": "Photos and labelling",
+    "priv.insta.photos.i1": "You share a photo folder (Google Drive) with our service account; we send you the exact address at registration, and you can unshare it at any time.",
+    "priv.insta.photos.i2": "An AI model (Google Gemini) reviews the photos and labels what's in them — so we can pick the right image for each post.",
+    "priv.insta.photos.i3": "We store those labels and copies of the photos for as long as you're a customer.",
+    "priv.insta.publish.h": "Publishing",
+    "priv.insta.publish.i1": "Approved posts and stories go out through the official Instagram (Meta) API to your connected professional account.",
+    "priv.insta.publish.i2": "We keep a journal of what we published and when.",
+    "priv.insta.ok.h": "The same principle as everywhere else:",
+    "priv.insta.ok.p": " you approve every post before it goes live; we never sell your photos or share them for advertising. Turning the add-on off is simple: unshare the folder and disconnect your Instagram account.",
+
     /* ---------- terms (ÁSZF) ---------- */
     "aszf.h1": "Terms of Service",
     "aszf.lede": "The terms for using the Responsa service. Last updated 21 July 2026.",
