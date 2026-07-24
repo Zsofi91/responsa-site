@@ -178,6 +178,21 @@ h2{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.2vw,46px);
 .priceone li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
 .priceone .btn{text-align:center;padding-top:14px;padding-bottom:14px}
 .tier-foot{text-align:center;color:var(--ink-faint);font-size:13.5px;margin:14px 0 0}
+/* pricing — two cards (core + add-on preview) */
+.price-cards{display:grid;grid-template-columns:repeat(2,minmax(0,440px));gap:24px}
+@media(max-width:820px){.price-cards{grid-template-columns:1fr;max-width:440px}}
+.priceadd{background:var(--bg-2);border:1.5px solid var(--bg-3);border-radius:var(--r-lg);
+  padding:40px 40px 36px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
+@media(max-width:640px){.priceadd{padding:32px 26px 30px;border-radius:var(--r-md)}}
+.price-badge{align-self:flex-start;background:var(--white);color:var(--green);font-size:12px;
+  font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;
+  border-radius:999px;box-shadow:var(--shadow-sm);margin-bottom:18px}
+.priceadd h3{font-family:var(--disp);font-weight:600;font-size:26px;letter-spacing:-.02em;
+  line-height:1.1;margin:0 0 24px;color:var(--ink)}
+.priceadd ul{list-style:none;padding:0;margin:0 0 28px;display:flex;flex-direction:column;gap:12px}
+.priceadd li{position:relative;padding-left:28px;font-size:16px;color:var(--ink-soft)}
+.priceadd li::before{content:"✦";position:absolute;left:0;color:var(--blue);font-weight:700}
+.priceadd .btn{text-align:center;padding-top:14px;padding-bottom:14px;margin-top:auto}
 .price-multi{margin:26px 0 0;font-size:16px;color:var(--ink-soft)}
 .price-multi a{color:var(--green);font-weight:600;text-decoration:none;border-bottom:1px solid transparent}
 .price-multi a:hover{border-bottom-color:var(--green)}

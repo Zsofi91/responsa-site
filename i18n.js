@@ -108,6 +108,12 @@ const STRINGS = {
     "price.f5": "Everything arrives on your phone",
     "price.cta": "Start free trial",
     "price.foot": "14 days free, no card.",
+    "price.add.badge": "Coming soon",
+    "price.add.h": "Instagram add-on",
+    "price.add.f1": "Posts and stories made from your own photos",
+    "price.add.f2": "Approve in chat, on your phone",
+    "price.add.f3": "Ask for an extra post anytime",
+    "price.add.cta": "Notify me",
     "price.multi": "More than one location?",
     "price.multilink": "Ask us for a price.",
 
