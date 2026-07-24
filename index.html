@@ -306,12 +306,26 @@
       <p class="eyebrow" data-i18n="form.eyebrow">Kezdjük el</p>
       <h2 data-i18n="form.h2">Nézzük meg a profilodat.</h2>
       <p class="lede" data-i18n="form.lede">Az első néhány választ még fizetés előtt megírjuk. Ha nem
-        tetszik, ennyi volt.</p>
+        tetszik, ennyi volt. Ha érdekel az Insta bővítmény, jelentkezz a várólistájára is — szólunk,
+        amint indul.</p>
       <div class="formwrap">
         <div class="form-fallback" data-i18n="form.placeholder">
           Ide kerül a Tally űrlap — még várunk az azonosítóra.
         </div>
       </div>
+      <!--
+        MANUAL STEPS FOR ZSÓFI (the Tally embed is still waiting on a form ID):
+          1. Create the Tally onboarding form.
+          2. Add an "Érdekel az Insta bővítmény" checkbox to it, so waitlist interest is
+             captured on the same form.
+          3. Replace the .form-fallback <div> above with the Tally <iframe> embed (real form ID/URL).
+          4. Then remove the placeholder mailto CTA below.
+      -->
+      <!-- PLACEHOLDER fallback CTA — temporary until the form is embedded; hello@responsa.hu is a placeholder address. -->
+      <p class="form-mailto">
+        <span data-i18n="form.mailtonote">Az űrlap még készül — addig is írj nekünk közvetlenül:</span>
+        <a class="btn btn-grad" href="mailto:hello@responsa.hu?subject=Responsa" data-i18n="form.mailtocta">Írj nekünk: hello@responsa.hu</a>
+      </p>
     </section>
 
   </main>
