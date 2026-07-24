@@ -121,9 +121,6 @@ const STRINGS = {
     "form.eyebrow": "Get started",
     "form.h2": "Let's look at your profile.",
     "form.lede": "We'll write your first few replies before you pay anything. If you don't like them, that's the end of it. Interested in the Instagram add-on? Join the waitlist too — we'll let you know when it launches.",
-    "form.placeholder": "Tally form embeds here — waiting on the form ID.",
-    "form.mailtonote": "The form is still being built — in the meantime, just email us:",
-    "form.mailtocta": "Email us: hello@responsa.hu",
 
     /* ---------- footer ---------- */
     "footer.copy": "© 2026 Responsa · Szeged, Hungary",
