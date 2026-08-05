@@ -17,10 +17,9 @@ const STRINGS = {
     /* ---------- hero ---------- */
     "hero.h1a": "More reviews — and a reply to every one, ",
     "hero.h1b": "in your voice",
-    "hero.sub": "We help more of your guests leave reviews — QR on the table, link on the bill — and we write the reply to every new one. Nothing goes out until you say so.",
+    "hero.sub": "We help more of your guests leave reviews — you get a QR code and a short link to put wherever works for you — and we write the reply to every new one. By default, every reply waits for your approval.",
     "hero.cta": "Get started",
-    "hero.mini": "No password. No owner access. Setup takes two clicks.",
-    "hero.phone": "No new system to log into — everything arrives on WhatsApp, on your phone.",
+    "hero.mini": "No password, no owner access, two clicks — and it all runs on WhatsApp, on your phone.",
     "chip.new": "New review",
     "chip.ok": "Reply approved",
 
@@ -31,16 +30,16 @@ const STRINGS = {
     "how.s1.p": "Two clicks in your Google Business Profile. Manager access is all it takes to reply — we never ask for your password or owner rights.",
     "how.s1.link": "See the guide",
     "how.s2.h": "A guest scans your QR code or link",
-    "how.s2.p": "One tap and they're on your Google review page — at the table, on the bill, by the door. No app, no signup.",
+    "how.s2.p": "One tap and they're on your Google review page — wherever you put it. No app, no signup.",
     "how.s3.h": "We write the reply in your voice",
     "how.s3.p": "We read your past replies and your menu or service list, then write a reply to every new review — the way you'd word it.",
     "how.s4.h": "You approve every reply",
-    "how.s4.p": "We show you every reply first. One tap and it's live on Google. Nothing publishes without you.",
+    "how.s4.p": "By default every reply comes to you on WhatsApp and goes out when you tap approve. If you'd rather not see all of them, tell us which replies can publish on their own — we'll set it up, as much or as little as you like.",
 
     /* ---------- grow your reviews ---------- */
     "grow.eyebrow": "Grow your reviews",
     "grow.h2": "Grow your reviews — the safe way.",
-    "grow.lede": "You get a QR card for the table and a short link for the bill, the receipt, or your email signature. One tap takes your guest to your Google review page — restaurant, salon, or clinic alike. No app, no signup.",
+    "grow.lede": "You get a QR code and a short link, and you decide where they go: the table, the bill, the receipt, by the door, or your email signature — wherever works for you. One tap takes your guest to your Google review page — restaurant, salon, or clinic alike. No app, no signup.",
     "grow.comp.h": "We never cherry-pick.",
     "grow.comp.p": " Some tools hide unhappy guests' reviews from Google (“review gating”). That breaks Google's policy and can wipe out months of reviews or get your profile suspended. Responsa never sorts guests — everyone gets the same link, and negative feedback comes straight to you, separately. We never gamble with your profile.",
     "grow.why": "Review count is one of the strongest local-ranking factors — and 38% of diners won't consider a place rated under 4★.",
@@ -49,7 +48,7 @@ const STRINGS = {
     /* ---------- why it matters ---------- */
     "why.eyebrow": "Why it matters",
     "why.h2": "Replying isn't just manners — it brings customers.",
-    "why.lede": "People read what you wrote back to someone else before they decide where to eat. Google reads it too.",
+    "why.lede": "People read what you wrote back to someone else before they decide where to eat — and Google reads it too. Your replies count toward where your place shows up in search and on the map.",
     "why.st1": "of people expect a business to respond to their review.",
     "why.src1": "BrightLocal, 1,141 US consumers, 2024",
     "why.st2": "say they're likely to use a business that answers all of its reviews.",
@@ -57,15 +56,16 @@ const STRINGS = {
     "why.st3": "expect to hear back within a week of leaving a review.",
     "why.st4": "only look at reviews from the last month — so a steady stream of new ones matters.",
     "why.src4": "BrightLocal, 1,002 US consumers, 2026",
-    "why.callout1": "Google counts your reviews when it decides how prominent your business is — and says plainly that",
+    "why.callout0": "Google says this itself.",
+    "why.callout1": " Google counts your reviews when it decides how prominent your business is — and says plainly that",
     "why.callout2": " “positive reviews and helpful replies can help your business stand out.”",
-    "why.callout3": " A reply that names the actual dish someone ordered is how you prove you read it.",
+    "why.callout3": " Which is why the wording matters: a reply that names the actual dish someone ordered is how you prove you read it.",
     "why.calloutsrc": "Google Business Profile Help",
 
     /* ---------- social proof (illustrations) ---------- */
     "proof.eyebrow": "Example",
     "proof.h2": "See the kind of reply we write.",
-    "proof.note": "Illustrative examples based on real reviews — not customer testimonials.",
+    "proof.note": "Illustrative examples based on real reviews.",
     "proof.p1.loc": "Szeged · restaurant",
     "proof.p1.review": "“The food was great, really good quality ingredients. The staff is very nice. They're pet friendly. Our dog had a lovely time, he even got some turkey ham ❤️ I highly recommend this place.”",
     "proof.p1.who": "Cristina P. · June 2026",
@@ -83,7 +83,7 @@ const STRINGS = {
 
     /* ---------- Instagram add-on (coming soon) ---------- */
     "addon.eyebrow": "Coming soon",
-    "addon.h2": "Not just reviews — your Instagram too.",
+    "addon.h2": "Your Instagram deserves the same attention.",
     "addon.lede": "An add-on we're building: posts and stories made from your own photos, and you still approve every single one. It's not live yet — join the waitlist and we'll tell you when it is.",
     "addon.s1.h": "Your photos, your posts",
     "addon.s1.p": "Posts and stories are built from your own photos — never stock images. It looks like your place because it is your place.",
@@ -98,26 +98,38 @@ const STRINGS = {
     /* ---------- pricing ---------- */
     "price.eyebrow": "Pricing",
     "price.h2": "Clear pricing, no surprises.",
-    "price.lede": "The more locations you have, the better the price — and every plan includes everything, QR review collection and all.",
+    "price.lede": "The more locations you have, the better the price — and every plan includes everything, QR review collection and all. Pay monthly, or pay for a year up front and you pay for 11 months instead of 12.",
+    "price.per.m": "Monthly",
+    "price.per.y": "Yearly · 1 month free",
     "price.t1.n": "1 location",
     "price.t1.amount": "12,900 <small>Ft/mo</small>",
+    "price.t1.yamount": "141,900 <small>Ft/yr</small>",
     "price.t1.save": "Every feature, no limits.",
+    "price.t1.ysave": "You pay for 11 months instead of 12 — 12,900 Ft less a year.",
+    "price.t1.yfirst": "Your first year is only 129,000 Ft, because the free month counts too.",
     "price.t2.n": "2 locations",
     "price.t2.amount": "22,900 <small>Ft/mo</small>",
+    "price.t2.yamount": "251,900 <small>Ft/yr</small>",
     "price.t2.save": "You save 2,900 Ft a month.",
-    "price.t3.badge": "Most popular",
+    "price.t2.ysave": "You pay for 11 months instead of 12 — 22,900 Ft less a year.",
+    "price.t2.yfirst": "Your first year is only 229,000 Ft, because the free month counts too.",
     "price.t3.n": "3 locations",
     "price.t3.amount": "29,900 <small>Ft/mo</small>",
+    "price.t3.yamount": "328,900 <small>Ft/yr</small>",
     "price.t3.save": "You save 8,800 Ft a month.",
+    "price.t3.ysave": "You pay for 11 months instead of 12 — 29,900 Ft less a year.",
+    "price.t3.yfirst": "Your first year is only 299,000 Ft, because the free month counts too.",
     "price.extra": "4 or more locations: <strong>29,900 Ft/mo</strong> for the first three, plus <strong>6,900 Ft/mo</strong> for each additional one.",
+    "price.extra.y": "4 or more locations: <strong>328,900 Ft/yr</strong> for the first three, plus <strong>75,900 Ft/yr</strong> for each additional one.",
     "price.incl": "Included in every plan",
     "price.f1": "A reply to every review, in your voice",
     "price.f2": "QR code and short link to collect reviews",
     "price.f3": "A separate channel for negative feedback",
-    "price.f4": "You approve every reply",
+    "price.f4": "Every reply waits for you by default — or set your own rules",
     "price.f5": "Everything arrives on WhatsApp, on your phone",
     "price.cta": "First month free",
     "price.foot": "Your first month is free, no card.",
+    "price.foot.y": "Your first month is still free — so your first yearly invoice covers only 10 months, and 11 every year after.",
     "price.add.badge": "Coming soon",
     "price.add.h": "Instagram add-on",
     "price.add.f1": "Posts and stories made from your own photos",
@@ -180,6 +192,8 @@ const STRINGS = {
     "guide.roles.r3": "Add or remove other people",
     "guide.roles.r4": "Delete the profile",
     "guide.roles.r5": "Remove our access",
+    "guide.roles.yes": "Yes",
+    "guide.roles.no": "No",
     "guide.roles.p2": "So a manager can technically edit your business details. <strong>We only ever reply to reviews.</strong> We don't touch your hours, photos, or description, and we can't remove you or delete anything. You can revoke us in the same menu you used to add us.",
     "guide.remove.h": "Removing our access",
     "guide.remove.p": "More → Business Profile settings → People and access, select our entry, then Remove. It takes effect immediately and you don't need to tell us first.",
@@ -188,11 +202,11 @@ const STRINGS = {
     "guide.faq.q1": "Do you need my Google password?",
     "guide.faq.a1": "No, and you should never give it to anyone. The invite works through Google's own permissions system — you're granting access to our account, not sharing yours.",
     "guide.faq.q2": "Will replies go out without me seeing them?",
-    "guide.faq.a2": "No. Every reply is drafted, sent to you, and only published once you approve it. That's the whole workflow.",
+    "guide.faq.a2": "Not unless you ask for it. By default every reply is drafted, sent to you, and only published once you approve it. If you'd rather some of them publish on their own, tell us which ones and we'll set that up — and you can change it back anytime.",
     "guide.faq.q3": "What if I don't like a reply?",
     "guide.faq.a3": "Reject it, or tell us what to change. Corrections feed back into how we write for you, so the same problem shouldn't come up twice.",
     "guide.faq.q4": "Can I stop at any time?",
-    "guide.faq.a4": "Yes. Remove our manager access and we're out — no notice period, nothing to cancel. Replies already published stay published, since they're yours.",
+    "guide.faq.a4": "Yes, there's no notice period. Tell us, and we keep working to the end of the month you've already paid for — worth leaving our access in place until then, because that's what lets us reply. Prefer to revoke it right away? You can, any time; we just can't reply from that point on, and the month already invoiced isn't refunded. Replies already published stay published, since they're yours.",
     "guide.help.h": "Stuck anywhere?",
     "guide.help.p": " Send us a message and we'll do it together on a call. This step trips people up more often than anything else, and it's a five-minute fix.",
     "guide.help.link": "Get in touch",
@@ -288,17 +302,15 @@ const STRINGS = {
     "aszf.h1": "Terms of Service",
     "aszf.lede": "The terms for using the Responsa service. Last updated 21 July 2026.",
     "aszf.draft.h": "Draft — not yet reviewed by a lawyer.",
-    "aszf.draft.p": " This document describes how the service actually works, but it has not been checked by a legal professional and the operator's registered details are still placeholders. Have it reviewed before relying on it.",
-    "aszf.s1.h": "The provider",
-    "aszf.s1.p": "The Responsa service is provided by <code>[LEGAL ENTITY NAME]</code> (<code>[REGISTERED ADDRESS]</code>, Hungary; tax no.: <code>[TAX NUMBER]</code>). Contact: <code>[CONTACT EMAIL]</code>.",
+    "aszf.draft.p": " This document describes how the service actually works, but it has not been checked by a legal professional. Have it reviewed before relying on it.",
     "aszf.s2.h": "The service",
-    "aszf.s2.p": "Responsa connects to the Customer's Google Business Profile with manager access and drafts replies to new reviews. Every reply is published only after the Customer approves it. From the Pro plan, Responsa also provides review-collection tools (QR code, short link). Responsa never filters or hides reviews.",
+    "aszf.s2.p": "Responsa connects to the Customer's Google Business Profile with manager access and drafts replies to new reviews. Every reply is published only after the Customer approves it, unless the Customer has asked in advance for a defined set of replies to publish automatically; the Customer may change or withdraw that setting at any time. Responsa also provides review-collection tools (QR code, short link) in every plan. Responsa never filters or hides reviews.",
     "aszf.s3.h": "Trial and fees",
-    "aszf.s3.p": "Your first month is free, with no card required. Pricing follows the plans published on the website, tiered by number of locations, billed monthly. Prices are in HUF and include VAT unless stated otherwise.",
+    "aszf.s3.p": "Your first month is free, with no card required. Pricing follows the plans published on the website, tiered by number of locations. The Customer may choose monthly billing, or pay for a year up front — in which case the fee for twelve months of service is eleven months' fee, and ten months' fee in the first year, because the free month is included. Prices are in HUF and include VAT unless stated otherwise.",
     "aszf.s4.h": "Term and cancellation",
-    "aszf.s4.p": "The agreement runs for an indefinite term and can be ended at any time, with no notice period, by the Customer revoking Responsa's manager access in their Google profile. Replies already published remain on the Customer's business profile.",
+    "aszf.s4.p": "The agreement runs for an indefinite term and the Customer may cancel at any time, with no notice period. Cancellation takes effect at the end of the period already paid for: if the Customer paid on 15 September and cancels on 20 September, the service runs until 15 October. With yearly prepayment, it runs to the end of the prepaid year. Until that date it is worth leaving Responsa's manager access in place — that is what lets us keep replying. The Customer may revoke access at any time, but doing so stops the service immediately, and the period already invoiced is not refunded. Replies already published remain on the Customer's business profile.",
     "aszf.s5.h": "Liability",
-    "aszf.s5.p": "Responsa submits drafts for the Customer's approval; the Customer is responsible for content once approved. The service depends on Google's availability, for which Responsa is not liable.",
+    "aszf.s5.p": "Responsa submits drafts for the Customer's approval; the Customer is responsible for the content once approved, and likewise for replies published under an automatic-publishing rule the Customer has asked for. The service depends on Google's availability, for which Responsa is not liable.",
     "aszf.s6.h": "Changes and governing law",
     "aszf.s6.p": "Responsa may amend these terms; the Customer will be notified of material changes in advance. Hungarian law applies to these terms. In a consumer dispute, the Customer may turn to the conciliation board with jurisdiction for their place of residence.",
 
@@ -358,4 +370,23 @@ function initLang() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", initLang);
+/* Pricing: monthly / yearly. Both price variants are in the HTML and CSS hides one set,
+   so this never touches innerHTML and never collides with applyLang(). Not persisted —
+   the billing period is a comparison you make on the spot, unlike the language. */
+function initPeriod() {
+  const root = document.querySelector("[data-price-period]");
+  const btns = document.querySelectorAll(".pertoggle button");
+  if (!root || !btns.length) return;
+
+  btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      root.setAttribute("data-price-period", btn.dataset.period);
+      btns.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initLang();
+  initPeriod();
+});
