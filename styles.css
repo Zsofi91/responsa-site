@@ -60,12 +60,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
 .hero-mascot{width:min(320px,80%);height:auto;animation:float 5s ease-in-out infinite}
 @media(max-width:900px){.hero-mascot{width:min(260px,70%)}}
 .nav-r{display:flex;align-items:center;gap:20px}
-.langtoggle{display:flex;gap:2px;background:var(--bg-2);border-radius:100px;padding:3px}
-.langtoggle button{border:none;background:none;font-family:var(--sans);font-size:13.5px;
-  font-weight:600;color:var(--ink-soft);padding:6px 13px;border-radius:100px;cursor:pointer;
-  transition:.18s}
-.langtoggle button[aria-pressed="true"]{background:var(--white);color:var(--ink);
-  box-shadow:var(--shadow-sm)}
+/* segmented control — shared by the language toggle and the billing-period toggle */
+.langtoggle,.pertoggle{display:flex;gap:2px;background:var(--bg-2);border-radius:100px;padding:3px}
+.langtoggle button,.pertoggle button{border:none;background:none;font-family:var(--sans);
+  font-size:13.5px;font-weight:600;color:var(--ink-soft);padding:6px 13px;border-radius:100px;
+  cursor:pointer;transition:.18s}
+.langtoggle button[aria-pressed="true"],.pertoggle button[aria-pressed="true"]{
+  background:var(--white);color:var(--ink);box-shadow:var(--shadow-sm)}
 .btn{display:inline-block;text-decoration:none;font-weight:600;border-radius:100px;
   transition:transform .2s,box-shadow .2s,background .2s}
 .btn-dark{background:var(--ink);color:#fff;padding:11px 22px;font-size:15px}
@@ -82,8 +83,8 @@ h1{font-family:var(--disp);font-weight:600;font-size:clamp(40px,5.6vw,68px);
   line-height:1.06;letter-spacing:-.03em;margin:0 0 22px}
 .grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent}
-.hero-sub{font-size:18.5px;color:var(--ink-soft);max-width:44ch;margin:0 0 34px}
-.hero-mini{font-size:14px;color:var(--ink-soft);margin-top:16px}
+.hero-sub{font-size:18.5px;color:var(--ink-soft);max-width:44ch;margin:0 0 18px}
+.hero-mini{font-size:14px;color:var(--ink-soft);margin:0 0 20px;max-width:44ch}
 
 /* mascot + floating chips */
 .art{position:relative;display:grid;place-items:center;min-height:340px}
@@ -144,6 +145,10 @@ h2{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.2vw,46px);
 .callout-ic{font-size:26px;line-height:1;flex:none}
 .callout p{margin:0;font-size:17px;max-width:62ch}
 .callout strong{font-weight:700}
+/* callout variant for the claim a section leads with, not one it closes with */
+.callout-lead{background:var(--white);border:1.5px solid var(--bg-3);
+  border-left:4px solid var(--green);margin-bottom:34px}
+.callout-lead strong{font-size:18.5px}
 
 /* proof */
 .proof{display:grid;grid-template-columns:1fr 1fr;gap:22px}
@@ -165,6 +170,9 @@ h2{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.2vw,46px);
 .testi-soon{align-items:center}
 .testi-soon p{color:var(--ink-soft)}
 
+/* pricing — monthly / yearly switch */
+.pertoggle{display:inline-flex;margin:0 0 30px}
+[data-price-period="monthly"] .per-y,[data-price-period="yearly"] .per-m{display:none}
 /* pricing — tier cards (1 / 2 / 3 locations) */
 .price-tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;max-width:940px}
 @media(max-width:1000px){.price-tiers{grid-template-columns:1fr;max-width:440px}}
@@ -181,6 +189,7 @@ h2{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.2vw,46px);
   line-height:1;color:var(--ink)}
 .tier-price small{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--ink-soft)}
 .tier-save{font-size:15px;color:var(--ink-soft);margin:12px 0 26px}
+.tier .tier-foot{margin:0 0 22px}
 .tier .btn{text-align:center;padding-top:14px;padding-bottom:14px;margin-top:auto}
 /* pricing — 4+ rule and the shared feature list */
 .price-extra{margin:22px 0 0;font-size:16px;color:var(--ink-soft);max-width:640px}

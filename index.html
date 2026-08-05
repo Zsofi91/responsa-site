@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Responsa — több vélemény, és mindegyikre válasz a te hangodon</title>
-<meta name="description" content="Segítünk, hogy a vendégeid értékelést írjanak (QR az asztalon, link a számlán), és minden új Google-értékelésre megírjuk a választ a te hangodon — semmi nem megy ki a jóváhagyásod nélkül.">
+<meta name="description" content="Segítünk, hogy a vendégeid értékelést írjanak (QR-kód és rövid link, amit oda teszel, ahova akarod), és minden új Google-értékelésre megírjuk a választ a te hangodon — alapból minden válasz a jóváhagyásodra vár.">
 <link rel="canonical" href="https://responsa.responsa-site.workers.dev/">
 <!-- Open Graph / social share -->
 <meta property="og:type" content="website">
@@ -12,14 +12,14 @@
 <meta property="og:locale" content="hu_HU">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="Responsa — több vélemény, és mindegyikre válasz a te hangodon">
-<meta property="og:description" content="Segítünk, hogy a vendégeid értékelést írjanak (QR az asztalon, link a számlán), és minden új Google-értékelésre megírjuk a választ a te hangodon — semmi nem megy ki a jóváhagyásod nélkül.">
+<meta property="og:description" content="Segítünk, hogy a vendégeid értékelést írjanak (QR-kód és rövid link, amit oda teszel, ahova akarod), és minden új Google-értékelésre megírjuk a választ a te hangodon — alapból minden válasz a jóváhagyásodra vár.">
 <meta property="og:url" content="https://responsa.responsa-site.workers.dev/">
 <meta property="og:image" content="https://responsa.responsa-site.workers.dev/assets/logo-mascot.svg">
 <meta property="og:image:type" content="image/svg+xml">
 <meta property="og:image:alt" content="A Responsa kabala, egy köpenyes szövegbuborék szívekkel a kezében">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Responsa — több vélemény, és mindegyikre válasz a te hangodon">
-<meta name="twitter:description" content="Segítünk, hogy a vendégeid értékelést írjanak (QR az asztalon, link a számlán), és minden új Google-értékelésre megírjuk a választ a te hangodon — semmi nem megy ki a jóváhagyásod nélkül.">
+<meta name="twitter:description" content="Segítünk, hogy a vendégeid értékelést írjanak (QR-kód és rövid link, amit oda teszel, ahova akarod), és minden új Google-értékelésre megírjuk a választ a te hangodon — alapból minden válasz a jóváhagyásodra vár.">
 <meta name="twitter:image" content="https://responsa.responsa-site.workers.dev/assets/logo-mascot.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,12 +53,12 @@
     <section class="hero">
       <div>
         <h1><span data-i18n="hero.h1a">Több értékelés — és mindegyikre válasz, </span><span class="grad-text" data-i18n="hero.h1b">a te hangodon</span>.</h1>
-        <p class="hero-sub" data-i18n="hero.sub">Segítünk, hogy több vendéged írjon értékelést — QR-kód az
-          asztalon, link a számlán —, az újakra pedig mi írjuk meg a választ. Amíg rá nem bólintasz, semmi
-          nem kerül ki.</p>
+        <p class="hero-sub" data-i18n="hero.sub">Segítünk, hogy több vendéged írjon értékelést — QR-kódot és
+          rövid linket kapsz, amit oda teszel, ahova a legjobb —, az újakra pedig mi írjuk meg a választ.
+          Alapból minden válasz a jóváhagyásodra vár.</p>
+        <p class="hero-mini" data-i18n="hero.mini">Jelszó és tulajdonosi jog nélkül, két kattintás — és
+          minden WhatsAppon fut, a telefonodon.</p>
         <a class="btn btn-grad" href="#start" data-i18n="hero.cta">Kezdjük el</a>
-        <p class="hero-mini" data-i18n="hero.mini">Jelszó nélkül. Tulajdonosi jog nélkül. A beállítás két kattintás.</p>
-        <p class="hero-mini" data-i18n="hero.phone">Nem kell új rendszerbe belépned — minden WhatsAppon érkezik, a telefonodra.</p>
       </div>
 
       <div class="art">
@@ -84,8 +84,8 @@
         <div class="step">
           <div class="step-ic" aria-hidden="true">📲</div>
           <h3 data-i18n="how.s2.h">A vendég beolvassa a QR-kódot vagy a linket</h3>
-          <p data-i18n="how.s2.p">Egyetlen koppintás, és már a Google-értékelő oldaladon van — az
-            asztalnál, a számlán vagy a kijáratnál. Nincs applikáció, nincs regisztráció.</p>
+          <p data-i18n="how.s2.p">Egyetlen koppintás, és már a Google-értékelő oldaladon van — bárhol is
+            helyezted ki. Nincs applikáció, nincs regisztráció.</p>
         </div>
         <div class="step">
           <div class="step-ic" aria-hidden="true">✍️</div>
@@ -96,8 +96,9 @@
         <div class="step">
           <div class="step-ic" aria-hidden="true">✅</div>
           <h3 data-i18n="how.s4.h">Te hagysz jóvá minden választ</h3>
-          <p data-i18n="how.s4.p">Minden választ előbb neked mutatunk meg. Egy koppintás, és már kint is
-            van a Google-on. Nélküled semmi nem jelenik meg.</p>
+          <p data-i18n="how.s4.p">Alapból minden válasz WhatsAppon érkezik hozzád, és akkor kerül ki, amikor
+            rábólintasz. Ha nem szeretnél mindet látni, szólj, melyik válaszok mehetnek ki maguktól —
+            beállítjuk, annyit vagy olyan keveset, amennyit szeretnél.</p>
         </div>
       </div>
     </section>
@@ -106,10 +107,10 @@
     <section class="section">
       <p class="eyebrow" data-i18n="grow.eyebrow">Több értékelés</p>
       <h2 data-i18n="grow.h2">Több értékelés — a biztonságos úton.</h2>
-      <p class="lede" data-i18n="grow.lede">QR-kártyát kapsz az asztalra, és egy rövid linket, amit a
-        számlára, a nyugtára vagy az e-mail-aláírásodba tehetsz. A vendég egyetlen koppintással a
-        Google-értékelő oldaladon van — legyen szó étteremről, szalonról vagy rendelőről. Nincs
-        applikáció, nincs regisztráció.</p>
+      <p class="lede" data-i18n="grow.lede">QR-kódot és egy rövid linket kapsz, és te döntöd el, hova
+        kerülnek: az asztalra, a számlára, a nyugtára, a kijárathoz vagy az e-mail-aláírásodba — ahol
+        nálad működik. A vendég egyetlen koppintással a Google-értékelő oldaladon van — legyen szó
+        étteremről, szalonról vagy rendelőről. Nincs applikáció, nincs regisztráció.</p>
 
       <div class="callout">
         <span class="callout-ic" aria-hidden="true">🛡️</span>
@@ -135,7 +136,20 @@
       <p class="eyebrow" data-i18n="why.eyebrow">Miért számít</p>
       <h2 data-i18n="why.h2">A válaszolás nem csak udvariasság — vendéget hoz.</h2>
       <p class="lede" data-i18n="why.lede">A vendég elolvassa, mit írtál vissza másoknak, mielőtt eldönti,
-        hova üljön be. És a Google is olvassa.</p>
+        hova üljön be — és a Google is olvassa. A válaszaid abba is beleszámítanak, hogy hol jelenik meg a
+        helyed a keresésben és a térképen.</p>
+
+      <div class="callout callout-lead">
+        <span class="callout-ic" aria-hidden="true">🔍</span>
+        <p><strong data-i18n="why.callout0">Ezt a Google maga írja le.</strong>
+          <span data-i18n="why.callout1"> A Google beleszámítja az értékeléseidet abba, mennyire számítasz
+          ismertnek — és egyértelműen kimondja, hogy</span>
+          <strong data-i18n="why.callout2"> „a pozitív értékelések és a segítőkész válaszok segíthetnek kitűnni".</strong>
+          <span data-i18n="why.callout3"> Ezért nem mindegy, milyen a válasz: ha néven nevezi, mit rendelt a
+          vendég, azzal bizonyítod, hogy tényleg elolvastad.</span>
+          <a href="https://support.google.com/business/answer/7091" rel="nofollow noopener"
+             target="_blank" data-i18n="why.calloutsrc">Google Cégprofil Súgó</a></p>
+      </div>
 
       <div class="stats">
         <div class="stat">
@@ -163,25 +177,13 @@
              rel="nofollow noopener" target="_blank" data-i18n="why.src4">BrightLocal, 1002 amerikai fogyasztó, 2026</a></p>
         </div>
       </div>
-
-      <div class="callout">
-        <span class="callout-ic" aria-hidden="true">🔍</span>
-        <p><span data-i18n="why.callout1">A Google beleszámítja az értékeléseidet abba, mennyire számítasz
-          ismertnek — és egyértelműen kimondja, hogy</span>
-          <strong data-i18n="why.callout2"> „a pozitív értékelések és a segítőkész válaszok segíthetnek kitűnni".</strong>
-          <span data-i18n="why.callout3"> Ha a válasz néven nevezi, mit rendelt a vendég, azzal bizonyítod,
-          hogy tényleg elolvastad.</span>
-          <a href="https://support.google.com/business/answer/7091" rel="nofollow noopener"
-             target="_blank" data-i18n="why.calloutsrc">Google Cégprofil Súgó</a></p>
-      </div>
     </section>
 
     <!-- ---------- example replies (illustrations) ---------- -->
     <section class="section">
       <p class="eyebrow" data-i18n="proof.eyebrow">Példa</p>
       <h2 data-i18n="proof.h2">Nézd meg, milyen választ írunk.</h2>
-      <p class="lede" data-i18n="proof.note">Szemléltető példák valódi értékelések alapján — nem
-        ügyfélvélemények.</p>
+      <p class="lede" data-i18n="proof.note">Szemléltető példák valódi értékelések alapján.</p>
       <div class="proof">
         <div class="pc">
           <div class="pc-biz">🥯 Szeged Bagel</div>
@@ -232,7 +234,7 @@
     <!-- ---------- Instagram add-on (coming soon) ---------- -->
     <section class="section">
       <p class="eyebrow" data-i18n="addon.eyebrow">Hamarosan</p>
-      <h2 data-i18n="addon.h2">Nemcsak a vélemények — az Instagramod is.</h2>
+      <h2 data-i18n="addon.h2">Az Instagramod is megérdemel ennyi figyelmet.</h2>
       <p class="lede" data-i18n="addon.lede">Egy bővítmény, amin dolgozunk: posztok és sztorik a saját
         fotóidból, és minden egyeset te hagysz jóvá. Még nem elérhető — iratkozz fel a várólistára, és
         szólunk, amint indul.</p>
@@ -264,38 +266,77 @@
     </section>
 
     <!-- ---------- pricing ---------- -->
-    <section class="section">
+    <!-- data-price-period drives the monthly/yearly swap: CSS hides .per-m or .per-y.
+         Both variants stay in the DOM so the language toggle can translate each one. -->
+    <section class="section" data-price-period="monthly">
       <p class="eyebrow" data-i18n="price.eyebrow">Árak</p>
       <h2 data-i18n="price.h2">Átlátható ár, meglepetések nélkül.</h2>
       <p class="lede" data-i18n="price.lede">Minél több telephelyed van, annál kedvezőbb — és minden
-        csomagban minden benne van, a QR-kódos értékelésgyűjtéssel együtt.</p>
+        csomagban minden benne van, a QR-kódos értékelésgyűjtéssel együtt. Fizethetsz havonta, vagy egy
+        évre előre — akkor 11 hónapot fizetsz 12 helyett.</p>
+
+      <div class="pertoggle" role="group" aria-label="Fizetési ciklus">
+        <button type="button" data-period="monthly" aria-pressed="true"
+                data-i18n="price.per.m">Havi</button>
+        <button type="button" data-period="yearly" aria-pressed="false"
+                data-i18n="price.per.y">Éves · 1 hónap ingyen</button>
+      </div>
 
       <div class="price-tiers">
         <div class="tier">
           <div class="tier-n" data-i18n="price.t1.n">1 telephely</div>
-          <div class="tier-price" data-i18n="price.t1.amount">12 900 <small>Ft/hó</small></div>
-          <p class="tier-save" data-i18n="price.t1.save">Minden funkció, korlátozás nélkül.</p>
+          <div class="tier-price">
+            <span class="per-m" data-i18n="price.t1.amount">12 900 <small>Ft/hó</small></span>
+            <span class="per-y" data-i18n="price.t1.yamount">141 900 <small>Ft/év</small></span>
+          </div>
+          <p class="tier-save">
+            <span class="per-m" data-i18n="price.t1.save">Minden funkció, korlátozás nélkül.</span>
+            <span class="per-y" data-i18n="price.t1.ysave">11 hónapot fizetsz 12 helyett — évi 12 900 Ft-tal
+              kevesebbet.</span>
+          </p>
+          <p class="tier-foot per-y" data-i18n="price.t1.yfirst">Az első évben csak 129 000 Ft, mert az
+            ingyenes hónap is beleszámít.</p>
           <a class="btn btn-grad" href="#start" data-i18n="price.cta">Első hónap ingyen</a>
         </div>
 
         <div class="tier">
           <div class="tier-n" data-i18n="price.t2.n">2 telephely</div>
-          <div class="tier-price" data-i18n="price.t2.amount">22 900 <small>Ft/hó</small></div>
-          <p class="tier-save" data-i18n="price.t2.save">Havi 2 900 Ft-ot spórolsz.</p>
+          <div class="tier-price">
+            <span class="per-m" data-i18n="price.t2.amount">22 900 <small>Ft/hó</small></span>
+            <span class="per-y" data-i18n="price.t2.yamount">251 900 <small>Ft/év</small></span>
+          </div>
+          <p class="tier-save">
+            <span class="per-m" data-i18n="price.t2.save">Havi 2 900 Ft-ot spórolsz.</span>
+            <span class="per-y" data-i18n="price.t2.ysave">11 hónapot fizetsz 12 helyett — évi 22 900 Ft-tal
+              kevesebbet.</span>
+          </p>
+          <p class="tier-foot per-y" data-i18n="price.t2.yfirst">Az első évben csak 229 000 Ft, mert az
+            ingyenes hónap is beleszámít.</p>
           <a class="btn btn-grad" href="#start" data-i18n="price.cta">Első hónap ingyen</a>
         </div>
 
-        <div class="tier tier-best">
-          <span class="price-badge" data-i18n="price.t3.badge">Legnépszerűbb</span>
+        <div class="tier">
           <div class="tier-n" data-i18n="price.t3.n">3 telephely</div>
-          <div class="tier-price" data-i18n="price.t3.amount">29 900 <small>Ft/hó</small></div>
-          <p class="tier-save" data-i18n="price.t3.save">Havi 8 800 Ft-ot spórolsz.</p>
+          <div class="tier-price">
+            <span class="per-m" data-i18n="price.t3.amount">29 900 <small>Ft/hó</small></span>
+            <span class="per-y" data-i18n="price.t3.yamount">328 900 <small>Ft/év</small></span>
+          </div>
+          <p class="tier-save">
+            <span class="per-m" data-i18n="price.t3.save">Havi 8 800 Ft-ot spórolsz.</span>
+            <span class="per-y" data-i18n="price.t3.ysave">11 hónapot fizetsz 12 helyett — évi 29 900 Ft-tal
+              kevesebbet.</span>
+          </p>
+          <p class="tier-foot per-y" data-i18n="price.t3.yfirst">Az első évben csak 299 000 Ft, mert az
+            ingyenes hónap is beleszámít.</p>
           <a class="btn btn-grad" href="#start" data-i18n="price.cta">Első hónap ingyen</a>
         </div>
       </div>
 
-      <p class="price-extra" data-i18n="price.extra">4 vagy több telephely: <strong>29 900 Ft/hó</strong>
+      <p class="price-extra per-m" data-i18n="price.extra">4 vagy több telephely: <strong>29 900 Ft/hó</strong>
         az első háromra, plusz <strong>6 900 Ft/hó</strong> minden továbbiért.</p>
+      <p class="price-extra per-y" data-i18n="price.extra.y">4 vagy több telephely:
+        <strong>328 900 Ft/év</strong> az első háromra, plusz <strong>75 900 Ft/év</strong> minden
+        továbbiért.</p>
 
       <div class="price-incl">
         <h3 data-i18n="price.incl">Minden csomagban benne van</h3>
@@ -303,10 +344,12 @@
           <li data-i18n="price.f1">Válasz minden értékelésre, a te hangodon</li>
           <li data-i18n="price.f2">QR-kód és rövid link az értékelésgyűjtéshez</li>
           <li data-i18n="price.f3">Külön csatorna a negatív visszajelzéseknek</li>
-          <li data-i18n="price.f4">Te hagysz jóvá minden választ</li>
+          <li data-i18n="price.f4">Alapból te hagysz jóvá minden választ — de beállíthatod másképp</li>
           <li data-i18n="price.f5">Minden WhatsAppon érkezik, a telefonodra</li>
         </ul>
-        <p class="tier-foot" data-i18n="price.foot">Az első hónap ingyenes, bankkártya nélkül.</p>
+        <p class="tier-foot per-m" data-i18n="price.foot">Az első hónap ingyenes, bankkártya nélkül.</p>
+        <p class="tier-foot per-y" data-i18n="price.foot.y">Az első hónap most is ingyen — az első éves
+          számla ezért csak 10 hónap, utána évente 11.</p>
       </div>
 
       <div class="priceadd">

@@ -28,7 +28,9 @@ from nav/footer until the add-on launches.
 ## Conventions
 - Reuse existing CSS patterns before writing new ones: `.section`, `.eyebrow`,
   `.steps` (4-column; use `.steps-3` for 3 items), `.chips-row`, `.chip`,
-  `.btn-grad`, `.priceone`, `.callout`.
+  `.btn-grad`, `.price-tiers`/`.tier`, `.callout` (`.callout-lead` for a
+  section's opening claim), and the shared segmented control
+  (`.langtoggle`/`.pertoggle`).
 - Accessibility: keep aria labels, heading order, and the skip link intact.
   Mobile-first; breakpoints at 1000px and 560px like the existing rules.
 - Tone: warm, honest, no hype. Hungarian audience first; the English must
