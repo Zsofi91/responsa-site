@@ -156,6 +156,7 @@ const STRINGS = {
     "contact.eyebrow": "Contact",
     "contact.h2": "Write to us.",
     "contact.form.lede": "A question, an idea, anything at all — send it over and we'll answer.",
+    "contact.note": "We only use your details to answer you — the details are in our <a href=\"privacy.html\">privacy notice</a>. We'll get back to you within a couple of days.",
 
     /* ---------- guide ---------- */
     "guide.back": "← Back to home",
@@ -245,33 +246,35 @@ const STRINGS = {
 
     /* ---------- privacy ---------- */
     "priv.h1": "Privacy",
-    "priv.lede": "What we collect, why we use it, and who else sees it. Last updated 5 August 2026.",
+    "priv.lede": "What we collect, why we use it, and who else sees it. Last updated 6 August 2026.",
     "priv.draft.h": "Draft — not yet reviewed by a lawyer.",
     "priv.draft.p": " This page describes our actual data handling honestly, but it has not been checked by a legal professional. Have it reviewed before relying on it.",
 
     "priv.what.h": "What we collect",
-    "priv.what.s1.h": "When you fill in the form",
+    "priv.what.s1.h": "When you fill in one of our forms",
     "priv.what.s1.i1": "Your name, email address, and phone or WhatsApp number",
+    "priv.what.s1.i5": "Whatever you write to us in the contact form",
     "priv.what.s1.i2": "Your business name and its Google Maps link",
     "priv.what.s1.i3": "Any menu, price list, or service document you upload or link",
     "priv.what.s1.i4": "Your preferred language, and anything you tell us about your style",
+    "priv.what.s1.note": "The last three apply to the signup form only — the contact form asks for your name, your email address and your message, nothing else.",
     "priv.what.s2.h": "Once you're a customer",
     "priv.what.s2.i1": "Your Google reviews, including the reviewer's public display name, star rating, and review text",
     "priv.what.s2.i2": "The replies we draft, and whether you approved or rejected them",
     "priv.what.s2.i3": "A record of what we published and when",
-    "priv.what.p1": "We don't use cookies for tracking, we run no analytics, and there are no advertising trackers on this site. The form is embedded from Tally, which sets what it needs to work.",
+    "priv.what.p1": "We don't use cookies for tracking, we run no analytics, and there are no advertising trackers on this site. Our forms are embedded from Tally, which sets what it needs to work.",
 
     "priv.why.h": "Why we use your data",
     "priv.why.i1": "<strong>To provide the service</strong> — we can't write replies in your voice without your reviews and your service list. Legal basis: performance of a contract.",
     "priv.why.i2": "<strong>To contact you</strong> — about drafts awaiting approval, and about your account. Legal basis: performance of a contract.",
-    "priv.why.i3": "<strong>To answer enquiries</strong> — if you fill in the form but never become a customer. Legal basis: legitimate interest in replying to you.",
+    "priv.why.i3": "<strong>To answer enquiries</strong> — if you write to us with a question, or fill in the signup form but never become a customer. Legal basis: legitimate interest in replying to you.",
 
     "priv.share.h": "Who else sees it",
     "priv.share.p1": "We don't sell your data and we don't share it for advertising. We do rely on these providers to run the service:",
     "priv.share.th1": "Provider",
     "priv.share.th2": "What reaches them",
     "priv.share.r1": "Your reviews and our published replies. We access your Business Profile as a manager.",
-    "priv.share.r2": "Everything you type into the onboarding form, including uploaded files.",
+    "priv.share.r2": "Everything you type into either of our forms — signup or contact — including uploaded files.",
     "priv.share.r3n": "Google Gemini or Anthropic Claude",
     "priv.share.r3": "The text of a review and your style rules, sent so a draft reply can be written. This includes the reviewer's first name where they used one.",
     "priv.share.r4": "Draft replies sent to you for approval.",
