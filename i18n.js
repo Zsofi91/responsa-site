@@ -29,19 +29,19 @@ const STRINGS = {
     "how.s1.h": "Add us as a manager",
     "how.s1.p": "Two clicks in your Google Business Profile. Manager access is all it takes to reply — we never ask for your password or owner rights.",
     "how.s1.link": "See the guide",
-    "how.s2.h": "A guest scans your QR code or link",
-    "how.s2.p": "One tap and they're on your Google review page — wherever you put it. No app, no signup.",
+    "how.s2.h": "Or a guest simply reviews you on Google",
+    "how.s2.p": "Our QR code just makes it easier: one tap and they're on your Google review page, no app and no signup. But if a guest finds your profile on their own, that's just as good — we reply to every new review, wherever it came from.",
     "how.s3.h": "We write the reply in your voice",
     "how.s3.p": "We read your past replies and your menu or service list, then write a reply to every new review — the way you'd word it.",
     "how.s4.h": "You approve every reply",
-    "how.s4.p": "By default every reply comes to you on WhatsApp and goes out when you tap approve. If you'd rather not see all of them, tell us which replies can publish on their own — we'll set it up, as much or as little as you like.",
+    "how.s4.p": "By default every reply comes to you on WhatsApp and goes out when you tap approve. If you'd rather not see all of them, tell us which replies can publish on their own.",
 
     /* ---------- grow your reviews ---------- */
     "grow.eyebrow": "Grow your reviews",
     "grow.h2": "Grow your reviews — the safe way.",
     "grow.lede": "You get a QR code and a short link, and you decide where they go: the table, the bill, the receipt, by the door, or your email signature — wherever works for you. One tap takes your guest to your Google review page — restaurant, salon, or clinic alike. No app, no signup.",
     "grow.comp.h": "We never cherry-pick.",
-    "grow.comp.p": " Some tools hide unhappy guests' reviews from Google (“review gating”). That breaks Google's policy and can wipe out months of reviews or get your profile suspended. Responsa never sorts guests — everyone gets the same link, and negative feedback comes straight to you, separately. We never gamble with your profile.",
+    "grow.comp.p": " Some tools hide unhappy guests' reviews from Google (“review gating”). That breaks Google's policy and can wipe out months of reviews or get your profile suspended. Responsa never sorts guests — everyone gets the same link. We never gamble with your profile.",
     "grow.why": "Review count is one of the strongest local-ranking factors — and 38% of diners won't consider a place rated under 4★.",
     "grow.src": "BrightLocal, local consumer research",
 
@@ -88,7 +88,7 @@ const STRINGS = {
     "addon.s1.h": "Your photos, your posts",
     "addon.s1.p": "Posts and stories are built from your own photos — never stock images. It looks like your place because it is your place.",
     "addon.s2.h": "You approve everything",
-    "addon.s2.p": "Every post comes to you on WhatsApp, on your phone. One tap approves it — nothing goes out until you say so.",
+    "addon.s2.p": "Every post comes to you on WhatsApp. One tap approves it — nothing goes out until you say so.",
     "addon.s3.h": "Ask anytime",
     "addon.s3.p": "Need something tonight? Write “tonight, buy-one-get-one beer” and a ready-to-post draft comes back for your approval.",
     "addon.chip1": "Post ready",
@@ -124,7 +124,6 @@ const STRINGS = {
     "price.incl": "Included in every plan",
     "price.f1": "A reply to every review, in your voice",
     "price.f2": "QR code and short link to collect reviews",
-    "price.f3": "A separate channel for negative feedback",
     "price.f4": "Every reply waits for you by default — or set your own rules",
     "price.f5": "Everything arrives on WhatsApp, on your phone",
     "price.cta": "First month free",
@@ -133,22 +132,28 @@ const STRINGS = {
     "price.add.badge": "Coming soon",
     "price.add.h": "Instagram add-on",
     "price.add.f1": "Posts and stories made from your own photos",
-    "price.add.f2": "Approve on WhatsApp, on your phone",
+    "price.add.f2": "Approve on WhatsApp",
     "price.add.f3": "Ask for an extra post anytime",
     "price.add.cta": "Notify me",
 
     /* ---------- form ---------- */
     "form.eyebrow": "Get started",
     "form.h2": "Let's look at your profile.",
-    "form.lede": "We'll write your first few replies before you pay anything. If you don't like them, that's the end of it. Interested in the Instagram add-on? Join the waitlist too — we'll let you know when it launches.",
+    "form.lede": "Your first month is free, no card. If you don't like it, that's the end of it. Interested in the Instagram add-on? Join the waitlist too — we'll let you know when it launches.",
 
     /* ---------- footer ---------- */
     "footer.copy": "© 2026 Responsa · Szeged, Hungary",
     "footer.guide": "Setup guide",
     "footer.terms": "Terms",
     "footer.privacy": "Privacy",
-    "footer.impressum": "Impressum",
     "footer.contact": "Contact",
+
+    /* ---------- contact ---------- */
+    "contact.h1": "Contact",
+    "contact.lede": "Write to us and we'll get back to you.",
+    "contact.eyebrow": "Contact",
+    "contact.h2": "Write to us.",
+    "contact.form.lede": "A question, an idea, anything at all — send it over and we'll answer.",
 
     /* ---------- guide ---------- */
     "guide.back": "← Back to home",
@@ -223,7 +228,7 @@ const STRINGS = {
     "ginsta.s2.h": "You connect your Instagram account",
     "ginsta.s2.p": "We walk you through the official Meta connection. It needs a professional (Business or Creator) Instagram account — we'll show you how to switch if you're not on one yet.",
     "ginsta.s3.h": "You approve everything on WhatsApp",
-    "ginsta.s3.p": "Every post and story arrives as a preview on WhatsApp, on your phone. One tap approves it — and you can ask for a change, or a new post, anytime.",
+    "ginsta.s3.p": "Every post and story arrives as a preview on WhatsApp. One tap approves it — and you can ask for a change, or a new post, anytime.",
     "ginsta.ctrl.h": "The same principle as with replies:",
     "ginsta.ctrl.p": " you're in control. Nothing goes out without you, and you can revoke access at any time.",
     "ginsta.faq.h": "Common questions",
@@ -236,11 +241,9 @@ const STRINGS = {
 
     /* ---------- privacy ---------- */
     "priv.h1": "Privacy",
-    "priv.lede": "What we collect, why we have it, who else sees it, and how to make us delete it. Last updated 19 July 2026.",
+    "priv.lede": "What we collect, why we use it, and who else sees it. Last updated 5 August 2026.",
     "priv.draft.h": "Draft — not yet reviewed by a lawyer.",
-    "priv.draft.p": " This page describes our actual data handling honestly, but it has not been checked by a legal professional and the operator's registered details are still placeholders. Have it reviewed before relying on it.",
-    "priv.who.h": "Who we are",
-    "priv.who.p": "Responsa is operated by <code>[LEGAL ENTITY NAME]</code>, <code>[REGISTERED ADDRESS]</code>, Hungary. For anything on this page, write to <code>[CONTACT EMAIL]</code>. We're the data controller for the information described below.",
+    "priv.draft.p": " This page describes our actual data handling honestly, but it has not been checked by a legal professional. Have it reviewed before relying on it.",
 
     "priv.what.h": "What we collect",
     "priv.what.s1.h": "When you fill in the form",
@@ -254,7 +257,7 @@ const STRINGS = {
     "priv.what.s2.i3": "A record of what we published and when",
     "priv.what.p1": "We don't use cookies for tracking, we run no analytics, and there are no advertising trackers on this site. The form is embedded from Tally, which sets what it needs to work.",
 
-    "priv.why.h": "Why we have it",
+    "priv.why.h": "Why we use your data",
     "priv.why.i1": "<strong>To provide the service</strong> — we can't write replies in your voice without your reviews and your service list. Legal basis: performance of a contract.",
     "priv.why.i2": "<strong>To contact you</strong> — about drafts awaiting approval, and about your account. Legal basis: performance of a contract.",
     "priv.why.i3": "<strong>To answer enquiries</strong> — if you fill in the form but never become a customer. Legal basis: legitimate interest in replying to you.",
@@ -270,33 +273,7 @@ const STRINGS = {
     "priv.share.r4": "Draft replies sent to you for approval.",
     "priv.ai.h": "On the AI part, plainly:",
     "priv.ai.p": " review text written by your customers is sent to a language model to draft a reply. Those reviews are already public on Google, but we think you should know it happens rather than find out later.",
-
-    "priv.keep.h": "How long we keep it",
-    "priv.keep.i1": "Enquiries that go nowhere: deleted within 12 months.",
-    "priv.keep.i2": "Customer contact and business details: for as long as you're a customer, then 12 months.",
-    "priv.keep.i3": "The log of published replies: kept while we work together, because it's what stops us replying to the same review twice.",
-    "priv.keep.i4": "Replies already published on Google stay there — they belong to your business profile, and only you can remove them.",
-
-    "priv.rights.h": "Your rights",
-    "priv.rights.p1": "Under the GDPR you can ask us for a copy of what we hold about you, ask us to correct it, ask us to delete it, or object to how we're using it. Write to <code>[CONTACT EMAIL]</code> and we'll respond within 30 days.",
-    "priv.rights.p2": "You can also revoke our access to your Google profile yourself at any time, without asking us — the <a href=\"guide.html\">setup guide</a> explains how. That stops all processing immediately.",
-    "priv.rights.link": "setup guide",
-    "priv.rights.p3": "If you think we've handled your data badly, you can complain to the Hungarian data protection authority (NAIH).",
-
-    "priv.sec.h": "How we hold it",
-    "priv.sec.p": "Customer records sit in a private file on a server we control, readable only by the account that runs the service. We don't keep your Google password, because we never have it — access works through Google's own permission system and you can withdraw it yourself.",
-
-    "priv.insta.h": "Instagram add-on (coming soon)",
-    "priv.insta.intro": "The Instagram add-on we're building involves a little more data than the above. It's not available yet — this will only apply to customers who explicitly connect it later.",
-    "priv.insta.photos.h": "Photos and labelling",
-    "priv.insta.photos.i1": "You share a photo folder (Google Drive) with our service account; we send you the exact address at registration, and you can unshare it at any time.",
-    "priv.insta.photos.i2": "An AI model (Google Gemini) reviews the photos and labels what's in them — so we can pick the right image for each post.",
-    "priv.insta.photos.i3": "We store those labels and copies of the photos for as long as you're a customer.",
-    "priv.insta.publish.h": "Publishing",
-    "priv.insta.publish.i1": "Approved posts and stories go out through the official Instagram (Meta) API to your connected professional account.",
-    "priv.insta.publish.i2": "We keep a journal of what we published and when.",
-    "priv.insta.ok.h": "The same principle as everywhere else:",
-    "priv.insta.ok.p": " you approve every post before it goes live; we never sell your photos or share them for advertising. Turning the add-on off is simple: unshare the folder and disconnect your Instagram account.",
+    "priv.contact": "Questions about how we handle your data? <a href=\"kapcsolat.html\">Write to us</a> and we'll answer.",
 
     /* ---------- terms (ÁSZF) ---------- */
     "aszf.h1": "Terms of Service",
@@ -312,23 +289,7 @@ const STRINGS = {
     "aszf.s5.h": "Liability",
     "aszf.s5.p": "Responsa submits drafts for the Customer's approval; the Customer is responsible for the content once approved, and likewise for replies published under an automatic-publishing rule the Customer has asked for. The service depends on Google's availability, for which Responsa is not liable.",
     "aszf.s6.h": "Changes and governing law",
-    "aszf.s6.p": "Responsa may amend these terms; the Customer will be notified of material changes in advance. Hungarian law applies to these terms. In a consumer dispute, the Customer may turn to the conciliation board with jurisdiction for their place of residence.",
-
-    /* ---------- impressum ---------- */
-    "imp.h1": "Impressum",
-    "imp.lede": "Details of the website operator. These are placeholders for now — they'll be replaced with real data once the company is registered.",
-    "imp.draft.h": "Draft — company details are still placeholders.",
-    "imp.draft.p": " Once the company is registered, this page will be updated with real details.",
-    "imp.r1.k": "Operator",
-    "imp.r2.k": "Registered address",
-    "imp.country": "Hungary",
-    "imp.r3.k": "Company reg. no.",
-    "imp.r4.k": "Tax number",
-    "imp.r5.k": "Email",
-    "imp.r6.k": "Hosting",
-    "imp.p1": "For details on how Responsa handles data, see the <a href=\"privacy.html\">privacy notice</a>; for the terms of the service, see the <a href=\"aszf.html\">Terms</a>.",
-    "imp.privlink": "privacy notice",
-    "imp.aszflink": "Terms"
+    "aszf.s6.p": "Responsa may amend these terms; the Customer will be notified of material changes in advance. Hungarian law applies to these terms. In a consumer dispute, the Customer may turn to the conciliation board with jurisdiction for their place of residence."
   }
 };
 

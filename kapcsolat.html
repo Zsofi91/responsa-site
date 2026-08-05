@@ -3,24 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Impresszum — Responsa</title>
-<meta name="description" content="A Responsa weboldal üzemeltetőjének adatai.">
-<meta name="robots" content="noindex">
-<link rel="canonical" href="https://responsa.responsa-site.workers.dev/impresszum.html">
+<title>Kapcsolat — Responsa</title>
+<meta name="description" content="Kérdésed van a Responsáról? Írj nekünk, és válaszolunk.">
+<link rel="canonical" href="https://responsa.responsa-site.workers.dev/kapcsolat.html">
 <!-- Open Graph / social share -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Responsa">
 <meta property="og:locale" content="hu_HU">
 <meta property="og:locale:alternate" content="en_US">
-<meta property="og:title" content="Impresszum — Responsa">
-<meta property="og:description" content="A Responsa weboldal üzemeltetőjének adatai.">
-<meta property="og:url" content="https://responsa.responsa-site.workers.dev/impresszum.html">
+<meta property="og:title" content="Kapcsolat — Responsa">
+<meta property="og:description" content="Kérdésed van a Responsáról? Írj nekünk, és válaszolunk.">
+<meta property="og:url" content="https://responsa.responsa-site.workers.dev/kapcsolat.html">
 <meta property="og:image" content="https://responsa.responsa-site.workers.dev/assets/logo-mascot.svg">
 <meta property="og:image:type" content="image/svg+xml">
 <meta property="og:image:alt" content="A Responsa kabala, egy köpenyes szövegbuborék szívekkel a kezében">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Impresszum — Responsa">
-<meta name="twitter:description" content="A Responsa weboldal üzemeltetőjének adatai.">
+<meta name="twitter:title" content="Kapcsolat — Responsa">
+<meta name="twitter:description" content="Kérdésed van a Responsáról? Írj nekünk, és válaszolunk.">
 <meta name="twitter:image" content="https://responsa.responsa-site.workers.dev/assets/logo-mascot.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,37 +49,20 @@
   <main id="main">
     <div class="page-hero">
       <a class="back" href="index.html" data-i18n="guide.back">← Vissza a főoldalra</a>
-      <h1 data-i18n="imp.h1">Impresszum</h1>
-      <p data-i18n="imp.lede">A weboldal üzemeltetőjének adatai. Ezek egyelőre helykitöltők — a cégalapítás
-        lezárultával valós adatokra cseréljük.</p>
+      <h1 data-i18n="contact.h1">Kapcsolat</h1>
+      <p data-i18n="contact.lede">Írj nekünk, és jelentkezünk.</p>
     </div>
 
-    <div class="prose">
-
-      <div class="box box-warn">
-        <p><strong data-i18n="imp.draft.h">Piszkozat — a cégadatok még helykitöltők.</strong>
-          <span data-i18n="imp.draft.p"> Amint a cég bejegyzése megtörténik, ezt az oldalt valós adatokkal
-          frissítjük.</span></p>
+    <section class="section section-tight">
+      <p class="eyebrow" data-i18n="contact.eyebrow">Kapcsolat</p>
+      <h2 data-i18n="contact.h2">Írj nekünk.</h2>
+      <p class="lede" data-i18n="contact.form.lede">Kérdés, ötlet, bármi — írd meg, és válaszolunk.</p>
+      <div class="formwrap">
+        <!-- TODO: swap TALLY_FORM_ID for the real Tally form id before this page goes live -->
+        <iframe src="https://tally.so/embed/TALLY_FORM_ID?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1"
+                width="100%" height="620" title="Responsa — kapcsolat" loading="lazy"></iframe>
       </div>
-
-      <div class="tblwrap">
-      <table class="tbl">
-        <tbody>
-          <tr><td data-i18n="imp.r1.k">Üzemeltető</td><td><code>[CÉGNÉV]</code></td></tr>
-          <tr><td data-i18n="imp.r2.k">Székhely</td><td><code>[SZÉKHELY]</code>, <span data-i18n="imp.country">Magyarország</span></td></tr>
-          <tr><td data-i18n="imp.r3.k">Cégjegyzékszám</td><td><code>[CÉGJEGYZÉKSZÁM]</code></td></tr>
-          <tr><td data-i18n="imp.r4.k">Adószám</td><td><code>[ADÓSZÁM]</code></td></tr>
-          <tr><td data-i18n="imp.r5.k">E-mail</td><td><code>[KAPCSOLATI E-MAIL]</code></td></tr>
-          <tr><td data-i18n="imp.r6.k">Tárhelyszolgáltató</td><td>Cloudflare, Inc.</td></tr>
-        </tbody>
-      </table>
-      </div>
-
-      <p data-i18n="imp.p1">A Responsa adatkezelési gyakorlatáról az <a href="privacy.html" data-i18n="imp.privlink">adatkezelési
-        tájékoztató</a>, a szolgáltatás feltételeiről az <a href="aszf.html" data-i18n="imp.aszflink">ÁSZF</a> ad
-        részletes tájékoztatást.</p>
-
-    </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -89,8 +71,7 @@
       <a href="guide.html" data-i18n="footer.guide">Útmutató</a>
       <a href="aszf.html" data-i18n="footer.terms">ÁSZF</a>
       <a href="privacy.html" data-i18n="footer.privacy">Adatkezelés</a>
-      <a href="impresszum.html" data-i18n="footer.impressum">Impresszum</a>
-      <a href="index.html#start" data-i18n="footer.contact">Kapcsolat</a>
+      <a href="kapcsolat.html" data-i18n="footer.contact">Kapcsolat</a>
     </nav>
   </footer>
 
