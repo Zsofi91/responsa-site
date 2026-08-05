@@ -79,7 +79,9 @@ const STRINGS = {
     /* ---------- testimonials ---------- */
     "testi.eyebrow": "Testimonials",
     "testi.h2": "What our customers say.",
-    "testi.soon": "We'll publish our first real customer testimonials here soon — with name, place, and concrete numbers. (For example: “our response rate went from 12% to 100% in 60 days.”)",
+    "testi.loc": "Szeged, Hungary · two restaurants",
+    "testi.quote": "“I run two places, and Responsa handles both. There were weeks when I didn't look at the reviews at all — not because I didn't care, but because at eleven at night I just didn't have it in me. Now I don't have to: I know every one of them has an answer. Szeged Bagel is at 4.9 with over 1,100 reviews, and we've clearly been getting more of them since we started working with them. That whole side of the business is off my shoulders.”",
+    "testi.who": "David B. · owner",
 
     /* ---------- Instagram add-on (coming soon) ---------- */
     "addon.eyebrow": "Coming soon",

@@ -166,9 +166,9 @@ h2{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.2vw,46px);
   color:var(--green);margin-bottom:7px}
 .pc-reply p{margin:0;font-size:15.5px;line-height:1.55}
 
-/* testimonials (placeholder state) */
-.testi-soon{align-items:center}
-.testi-soon p{color:var(--ink-soft)}
+/* testimonials */
+.testi-card .pc-review{margin-bottom:0}
+.testi-card .pc-review p{max-width:62ch}
 
 /* pricing — monthly / yearly switch */
 .pertoggle{display:inline-flex;margin:0 0 30px}
