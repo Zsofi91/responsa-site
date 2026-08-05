@@ -271,6 +271,16 @@ h2{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.2vw,46px);
 /* screenshot placeholders */
 .shot{background:var(--bg-2);border:2px dashed var(--bg-3);border-radius:14px;
   padding:34px 24px;text-align:center;color:var(--ink-faint);font-size:14px;margin:14px 0 4px}
+/* real screenshots — stacked, full column width: these are wide strips, and side by side
+   would shrink Google's menu labels past reading size */
+.shots{display:grid;gap:18px;margin:14px 0 4px}
+/* on desktop let them reach past the 68ch text column into the free space in .wrap,
+   so Google's menu labels stay readable (52px step indent + 800px still fits) */
+@media(min-width:1000px){.shots{width:min(800px,calc(100vw - 200px))}}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;border:1px solid var(--bg-3);border-radius:12px}
+.shots figcaption{font-size:13px;color:var(--ink-faint);margin-top:8px}
+.shots-note{font-size:13px;color:var(--ink-faint);margin:14px 0 4px}
 
 /* table */
 .tbl{width:100%;border-collapse:collapse;margin:18px 0 24px;font-size:15.5px}
