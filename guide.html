@@ -90,7 +90,23 @@
             birtokló Google-fiókba, vagy nyisd meg a profilt a Térképen.</p></li>
         <li><strong data-i18n="guide.add.s2.h">Menj a Továbbiak → Cégprofil beállításai → Felhasználók és hozzáférés menüpontra</strong>
           <p data-i18n="guide.add.s2.p">Ezek a Google saját menüfeliratai.</p>
-          <div class="shot" data-i18n="guide.shot">Ide képernyőkép kerül</div></li>
+          <!-- The <img>s sit outside every data-i18n element on purpose: applyLang()
+               overwrites innerHTML, so an image nested inside one would be wiped. -->
+          <div class="shots">
+            <figure>
+              <img src="assets/guide-step2-1.webp" width="1400" height="436" loading="lazy"
+                   alt="A Google cégprofil panelje, jobbra fent a hárompontos menü megnyitva, benne a Cégprofil beállításai pont">
+              <figcaption data-i18n="guide.add.s2.cap1">A hárompontos menü (⋮) a profilod jobb felső
+                sarkában → Cégprofil beállításai</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/guide-step2-2.png" width="701" height="202" loading="lazy"
+                   alt="A Cégprofil beállításai panel, legfelül kijelölve a Felhasználók és hozzáférés sor">
+              <figcaption data-i18n="guide.add.s2.cap2">Aztán a Felhasználók és hozzáférés</figcaption>
+            </figure>
+          </div>
+          <p class="shots-note" data-i18n="guide.add.s2.note">A képeken angol nyelvű Google-felület
+            látszik — ha a tiéd magyar, ugyanezeket a pontokat magyar felirattal találod.</p></li>
         <li><strong data-i18n="guide.add.s3.h">Kattints a bal felső „Hozzáadás" gombra</strong>
           <p data-i18n="guide.add.s3.p">Megnyílik egy panel, ami e-mail-címet kér.</p></li>
         <li><strong data-i18n="guide.add.s4.h">Írd be a Responsa e-mail-címét</strong>
