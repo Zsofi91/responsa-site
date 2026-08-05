@@ -58,7 +58,7 @@
           nem kerül ki.</p>
         <a class="btn btn-grad" href="#start" data-i18n="hero.cta">Kezdjük el</a>
         <p class="hero-mini" data-i18n="hero.mini">Jelszó nélkül. Tulajdonosi jog nélkül. A beállítás két kattintás.</p>
-        <p class="hero-mini" data-i18n="hero.phone">Nem kell új rendszerbe belépned — minden a telefonodra érkezik.</p>
+        <p class="hero-mini" data-i18n="hero.phone">Nem kell új rendszerbe belépned — minden WhatsAppon érkezik, a telefonodra.</p>
       </div>
 
       <div class="art">
@@ -246,7 +246,7 @@
         <div class="step">
           <div class="step-ic" aria-hidden="true">📱</div>
           <h3 data-i18n="addon.s2.h">Mindent te hagysz jóvá</h3>
-          <p data-i18n="addon.s2.p">Minden poszt chatben érkezik hozzád, a telefonodon. Egy koppintás
+          <p data-i18n="addon.s2.p">Minden poszt WhatsAppon érkezik hozzád, a telefonodra. Egy koppintás
             jóváhagyja — nélküled semmi nem megy ki.</p>
         </div>
         <div class="step">
@@ -267,38 +267,58 @@
     <section class="section">
       <p class="eyebrow" data-i18n="price.eyebrow">Árak</p>
       <h2 data-i18n="price.h2">Átlátható ár, meglepetések nélkül.</h2>
-      <p class="lede" data-i18n="price.lede">Egy ár, telephelyenként — és minden benne van, a QR-kódos
-        értékelésgyűjtéssel együtt.</p>
+      <p class="lede" data-i18n="price.lede">Minél több telephelyed van, annál kedvezőbb — és minden
+        csomagban minden benne van, a QR-kódos értékelésgyűjtéssel együtt.</p>
 
-      <div class="price-cards">
-        <div class="priceone">
-          <div class="tier-price" data-i18n="price.amount">12 900 <small>Ft/hó</small></div>
-          <div class="tier-per" data-i18n="price.perloc">telephelyenként</div>
-          <ul>
-            <li data-i18n="price.f1">Válasz minden értékelésre, a te hangodon</li>
-            <li data-i18n="price.f2">QR-kód és rövid link az értékelésgyűjtéshez</li>
-            <li data-i18n="price.f3">Külön csatorna a negatív visszajelzéseknek</li>
-            <li data-i18n="price.f4">Te hagysz jóvá minden választ</li>
-            <li data-i18n="price.f5">Minden a telefonodra érkezik</li>
-          </ul>
-          <a class="btn btn-grad" href="#start" data-i18n="price.cta">Ingyenes próba</a>
-          <p class="tier-foot" data-i18n="price.foot">14 napig ingyen, bankkártya nélkül.</p>
+      <div class="price-tiers">
+        <div class="tier">
+          <div class="tier-n" data-i18n="price.t1.n">1 telephely</div>
+          <div class="tier-price" data-i18n="price.t1.amount">12 900 <small>Ft/hó</small></div>
+          <p class="tier-save" data-i18n="price.t1.save">Minden funkció, korlátozás nélkül.</p>
+          <a class="btn btn-grad" href="#start" data-i18n="price.cta">Első hónap ingyen</a>
         </div>
 
-        <div class="priceadd">
-          <span class="price-badge" data-i18n="price.add.badge">Hamarosan</span>
-          <h3 data-i18n="price.add.h">Insta bővítmény</h3>
-          <ul>
-            <li data-i18n="price.add.f1">Saját fotóidból készülő posztok és sztorik</li>
-            <li data-i18n="price.add.f2">Jóváhagyás chatben, a telefonodon</li>
-            <li data-i18n="price.add.f3">Kérésre bármikor extra poszt</li>
-          </ul>
-          <a class="btn btn-grad" href="#start" data-i18n="price.add.cta">Kérek értesítést</a>
+        <div class="tier">
+          <div class="tier-n" data-i18n="price.t2.n">2 telephely</div>
+          <div class="tier-price" data-i18n="price.t2.amount">22 900 <small>Ft/hó</small></div>
+          <p class="tier-save" data-i18n="price.t2.save">Havi 2 900 Ft-ot spórolsz.</p>
+          <a class="btn btn-grad" href="#start" data-i18n="price.cta">Első hónap ingyen</a>
+        </div>
+
+        <div class="tier tier-best">
+          <span class="price-badge" data-i18n="price.t3.badge">Legnépszerűbb</span>
+          <div class="tier-n" data-i18n="price.t3.n">3 telephely</div>
+          <div class="tier-price" data-i18n="price.t3.amount">29 900 <small>Ft/hó</small></div>
+          <p class="tier-save" data-i18n="price.t3.save">Havi 8 800 Ft-ot spórolsz.</p>
+          <a class="btn btn-grad" href="#start" data-i18n="price.cta">Első hónap ingyen</a>
         </div>
       </div>
 
-      <p class="price-multi"><span data-i18n="price.multi">Több telephelyed van?</span>
-        <a href="#start" data-i18n="price.multilink">Kérj rá egyedi árat.</a></p>
+      <p class="price-extra" data-i18n="price.extra">4 vagy több telephely: <strong>29 900 Ft/hó</strong>
+        az első háromra, plusz <strong>6 900 Ft/hó</strong> minden továbbiért.</p>
+
+      <div class="price-incl">
+        <h3 data-i18n="price.incl">Minden csomagban benne van</h3>
+        <ul>
+          <li data-i18n="price.f1">Válasz minden értékelésre, a te hangodon</li>
+          <li data-i18n="price.f2">QR-kód és rövid link az értékelésgyűjtéshez</li>
+          <li data-i18n="price.f3">Külön csatorna a negatív visszajelzéseknek</li>
+          <li data-i18n="price.f4">Te hagysz jóvá minden választ</li>
+          <li data-i18n="price.f5">Minden WhatsAppon érkezik, a telefonodra</li>
+        </ul>
+        <p class="tier-foot" data-i18n="price.foot">Az első hónap ingyenes, bankkártya nélkül.</p>
+      </div>
+
+      <div class="priceadd">
+        <span class="price-badge" data-i18n="price.add.badge">Hamarosan</span>
+        <h3 data-i18n="price.add.h">Insta bővítmény</h3>
+        <ul>
+          <li data-i18n="price.add.f1">Saját fotóidból készülő posztok és sztorik</li>
+          <li data-i18n="price.add.f2">Jóváhagyás WhatsAppon, a telefonodon</li>
+          <li data-i18n="price.add.f3">Kérésre bármikor extra poszt</li>
+        </ul>
+        <a class="btn btn-grad" href="#start" data-i18n="price.add.cta">Kérek értesítést</a>
+      </div>
     </section>
 
     <!-- ---------- form ---------- -->

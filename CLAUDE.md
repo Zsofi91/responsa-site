@@ -36,8 +36,9 @@ from nav/footer until the add-on launches.
 
 ## Content rules (don't contradict the product)
 - The Instagram add-on is "coming soon" — never present it as live.
-- The approval channel is described generically ("chatben, a telefonodon") —
-  never name Telegram/Viber/WhatsApp.
+- The approval channel is WhatsApp — every connection with the customer runs
+  through it. Name it plainly ("WhatsAppon, a telefonodon"); don't fall back to
+  the old generic "chatben" wording, and never name any other messenger.
 - Pricing shown on this site is the source of truth for the site — don't
   import numbers from anywhere else without Zsófi's say-so.
 - The canonical site URL for the MVP is
