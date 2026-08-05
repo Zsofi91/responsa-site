@@ -14,10 +14,10 @@ Plain static HTML/CSS/JS. No build step, no frameworks.
 | `guide.html` | Setup guide (adding Responsa to a Google Business Profile) |
 | `privacy.html` | Privacy policy |
 | `aszf.html` | Terms of service (ÁSZF) |
-| `impresszum.html` | Legal imprint |
+| `kapcsolat.html` | Contact page (embedded Tally form) |
 | `i18n.js` | Language toggle + all English strings |
 | `styles.css` | All styles |
-| `assets/` | Logo SVGs |
+| `assets/` | Logo SVGs + guide screenshots |
 | `wrangler.jsonc` | Cloudflare deployment config |
 
 ## How the two languages work

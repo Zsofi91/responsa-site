@@ -22,8 +22,13 @@ from `STRINGS.en` in i18n.js.
 ## Pages
 `index.html` (landing), `guide.html` (Google manager-invite setup),
 `privacy.html` (draft — keep its lawyer-review banner), `aszf.html` (terms),
-`impresszum.html` (imprint). Planned: `guide-insta.html` — keep it UNLINKED
-from nav/footer until the add-on launches.
+`kapcsolat.html` (contact — embedded Tally form). Planned: `guide-insta.html`
+— keep it UNLINKED from nav/footer until the add-on launches.
+
+There is deliberately NO impresszum page right now (removed 2026-08-05) and the
+privacy notice deliberately has no retention/security/rights sections. Both are
+tracked as GitHub issues — don't "helpfully" re-add them without Zsófi's say-so,
+and don't invent operator details: the company isn't registered yet.
 
 ## Conventions
 - Reuse existing CSS patterns before writing new ones: `.section`, `.eyebrow`,
