@@ -140,6 +140,8 @@ const STRINGS = {
     "form.eyebrow": "Get started",
     "form.h2": "Let's look at your profile.",
     "form.lede": "Your first month is free, no card. If you don't like it, that's the end of it. Interested in the Instagram add-on? Join the waitlist too — we'll let you know when it launches.",
+    "form.tally": "jarvG6",
+    "form.tally.title": "Responsa — signup",
 
     /* ---------- footer ---------- */
     "footer.copy": "© 2026 Responsa · Szeged, Hungary",
@@ -154,6 +156,8 @@ const STRINGS = {
     "contact.eyebrow": "Contact",
     "contact.h2": "Write to us.",
     "contact.form.lede": "A question, an idea, anything at all — send it over and we'll answer.",
+    "contact.tally": "PdNk8d",
+    "contact.tally.title": "Responsa — contact",
     "contact.note": "We only use your details to answer you — the details are in our <a href=\"privacy.html\">privacy notice</a>. We'll get back to you within a couple of days.",
 
     /* ---------- guide ---------- */
@@ -300,6 +304,24 @@ const STRINGS = {
 
 const STORAGE_KEY = "responsa.lang";
 
+/* The Tally embeds are the one thing a string dictionary can't cover: a Tally form
+   carries the questions of exactly one language, so English means a second Tally
+   form. The "*.tally" keys above hold its form ID and the iframe URL is repointed
+   at it; the embed parameters stay authored in the HTML. No key, no swap — the
+   embed then simply stays Hungarian instead of breaking. */
+const TALLY_ID = /\/embed\/([^?/#]+)/;
+
+function swapTallyForm(frame, id) {
+  const next = frame.src.replace(TALLY_ID, "/embed/" + id);
+  if (next === frame.src) return;
+  /* Replace the element instead of assigning .src: navigating an iframe in place
+     pushes a session-history entry, so the back button would step through form
+     versions instead of leaving the page. cloneNode carries the data-* over. */
+  const fresh = frame.cloneNode(false);
+  fresh.src = next;
+  frame.replaceWith(fresh);
+}
+
 function applyLang(lang) {
   const dict = STRINGS[lang];
   const useSource = !dict; // the source language (Hungarian) has no dict — use the inline HTML.
@@ -313,6 +335,17 @@ function applyLang(lang) {
     }
   });
 
+  document.querySelectorAll("[data-i18n-tally]").forEach((frame) => {
+    const id = useSource ? frame.dataset.i18nTallySource : dict[frame.dataset.i18nTally];
+    if (id) swapTallyForm(frame, id);
+  });
+
+  /* The embeds' accessible name — screen readers announce it as the frame's label. */
+  document.querySelectorAll("[data-i18n-title]").forEach((el) => {
+    const val = useSource ? el.dataset.i18nTitleSource : dict[el.dataset.i18nTitle];
+    if (val !== undefined) el.setAttribute("title", val);
+  });
+
   document.documentElement.lang = useSource ? SOURCE_LANG : lang;
   document.querySelectorAll(".langtoggle button").forEach((btn) => {
     btn.setAttribute("aria-pressed", String(btn.dataset.lang === (useSource ? SOURCE_LANG : lang)));
@@ -323,6 +356,13 @@ function initLang() {
   // Stash the Hungarian original before anything overwrites it.
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     el.dataset.i18nSource = el.innerHTML;
+  });
+  document.querySelectorAll("[data-i18n-tally]").forEach((frame) => {
+    const match = frame.src.match(TALLY_ID);
+    if (match) frame.dataset.i18nTallySource = match[1];
+  });
+  document.querySelectorAll("[data-i18n-title]").forEach((el) => {
+    el.dataset.i18nTitleSource = el.getAttribute("title");
   });
 
   const saved = localStorage.getItem(STORAGE_KEY);
