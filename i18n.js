@@ -40,8 +40,6 @@ const STRINGS = {
     "grow.eyebrow": "Grow your reviews",
     "grow.h2": "Grow your reviews — the safe way.",
     "grow.lede": "You get a QR code and a short link, and you decide where they go: the table, the bill, the receipt, by the door, or your email signature — wherever works for you. One tap takes your guest to your Google review page — restaurant, salon, or clinic alike. No app, no signup.",
-    "grow.comp.h": "We never cherry-pick.",
-    "grow.comp.p": " Some tools hide unhappy guests' reviews from Google (“review gating”). That breaks Google's policy and can wipe out months of reviews or get your profile suspended. Responsa never sorts guests — everyone gets the same link. We never gamble with your profile.",
     "grow.why": "Review count is one of the strongest local-ranking factors — and 38% of diners won't consider a place rated under 4★.",
     "grow.src": "BrightLocal, local consumer research",
 
@@ -80,7 +78,7 @@ const STRINGS = {
     "testi.eyebrow": "Testimonials",
     "testi.h2": "What our customers say.",
     "testi.loc": "Szeged, Hungary · two restaurants",
-    "testi.quote": "“I run two places, and Responsa handles both. There were weeks when I didn't look at the reviews at all — not because I didn't care, but because at eleven at night I just didn't have it in me. Now I don't have to: I know every one of them has an answer. Szeged Bagel is at 4.9 with over 1,100 reviews, and we've clearly been getting more of them since we started working with them. That whole side of the business is off my shoulders.”",
+    "testi.quote": "“I run two places, and Responsa handles both. There were weeks when I didn't look at the reviews at all — not because I didn't care, but because at eleven at night I just didn't have it in me. Now I don't have to: I know every one of them has an answer. Szeged Bagel is at 4.9 with over 1,100 reviews, and we've clearly been getting more of them since we started working with them. It makes my job a lot easier.”",
     "testi.who": "David B. · owner",
 
     /* ---------- Instagram add-on (coming soon) ---------- */
@@ -92,7 +90,7 @@ const STRINGS = {
     "addon.s2.h": "You approve everything",
     "addon.s2.p": "Every post comes to you on WhatsApp. One tap approves it — nothing goes out until you say so.",
     "addon.s3.h": "Ask anytime",
-    "addon.s3.p": "Need something tonight? Write “tonight, buy-one-get-one beer” and a ready-to-post draft comes back for your approval.",
+    "addon.s3.p": "Need something tonight? Write “tonight, buy-one-get-one beer” — we'll put the post together and send it over for your approval.",
     "addon.chip1": "Post ready",
     "addon.chip2": "Approved",
     "addon.cta": "Join the waitlist",
