@@ -22,13 +22,16 @@ from `STRINGS.en` in i18n.js.
 ## Pages
 `index.html` (landing), `guide.html` (Google manager-invite setup),
 `privacy.html` (draft — keep its lawyer-review banner), `aszf.html` (terms),
+`dpa.html` (data processing agreement — the ÁSZF's annex; Hungarian-only BY
+DESIGN: no `data-i18n` keys, no i18n.js, not in the nav — don't "fix" that),
 `kapcsolat.html` (contact — embedded Tally form). Planned: `guide-insta.html`
 — keep it UNLINKED from nav/footer until the add-on launches.
 
-There is deliberately NO impresszum page right now (removed 2026-08-05) and the
-privacy notice deliberately has no retention/security/rights sections. Both are
-tracked as GitHub issues — don't "helpfully" re-add them without Zsófi's say-so,
-and don't invent operator details: the company isn't registered yet.
+The privacy notice carries retention/rights/controller sections since
+2026-08-23 (added on Zsófi's instruction). The controller block uses marked
+placeholders ("[Név] egyéni vállalkozó (nyilvántartási szám: [•••])") — Zsófi
+operates as an egyéni vállalkozó and fills the real details after registering;
+never invent them, and keep `teamresponsa@gmail.com` as the contact.
 
 ## Conventions
 - Reuse existing CSS patterns before writing new ones: `.section`, `.eyebrow`,
@@ -43,9 +46,10 @@ and don't invent operator details: the company isn't registered yet.
 
 ## Content rules (don't contradict the product)
 - The Instagram add-on is "coming soon" — never present it as live.
-- The approval channel is WhatsApp — every connection with the customer runs
-  through it. Name it plainly ("WhatsAppon, a telefonodon"); don't fall back to
-  the old generic "chatben" wording, and never name any other messenger.
+- The approval channel is WhatsApp OR Telegram — the customer chooses (Zsófi's
+  decision, 2026-08-23). Name both plainly ("WhatsAppon vagy Telegramon, a
+  telefonodon"); don't fall back to the old generic "chatben" wording, and
+  never name any other messenger.
 - Pricing shown on this site is the source of truth for the site — don't
   import numbers from anywhere else without Zsófi's say-so.
 - The canonical site URL for the MVP is

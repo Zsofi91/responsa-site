@@ -19,7 +19,7 @@ const STRINGS = {
     "hero.h1b": "in your voice",
     "hero.sub": "We help more of your guests leave reviews — you get a QR code and a short link to put wherever works for you — and we write the reply to every new one. By default, every reply waits for your approval.",
     "hero.cta": "Get started",
-    "hero.mini": "No password, no owner access, two clicks — and it all runs on WhatsApp, on your phone.",
+    "hero.mini": "No password, no owner access, two clicks — and it all runs on WhatsApp or Telegram, on your phone. You choose which.",
     "chip.new": "New review",
     "chip.ok": "Reply approved",
 
@@ -34,7 +34,7 @@ const STRINGS = {
     "how.s3.h": "We write the reply in your voice",
     "how.s3.p": "We read your past replies and your menu or service list, then write a reply to every new review — the way you'd word it.",
     "how.s4.h": "You approve every reply",
-    "how.s4.p": "By default every reply comes to you on WhatsApp and goes out when you tap approve. If you'd rather not see all of them, tell us which replies can publish on their own.",
+    "how.s4.p": "By default every reply comes to you on WhatsApp or Telegram — whichever you choose — and goes out when you tap approve. If you'd rather not see all of them, tell us which replies can publish on their own.",
 
     /* ---------- grow your reviews ---------- */
     "grow.eyebrow": "Grow your reviews",
@@ -88,7 +88,7 @@ const STRINGS = {
     "addon.s1.h": "Your photos, your posts",
     "addon.s1.p": "Posts and stories are built from your own photos — never stock images. It looks like your place because it is your place.",
     "addon.s2.h": "You approve everything",
-    "addon.s2.p": "Every post comes to you on WhatsApp. One tap approves it — nothing goes out until you say so.",
+    "addon.s2.p": "Every post comes to you on WhatsApp or Telegram. One tap approves it — nothing goes out until you say so.",
     "addon.s3.h": "Ask anytime",
     "addon.s3.p": "Need something tonight? Write “tonight, buy-one-get-one beer” — we'll put the post together and send it over for your approval.",
     "addon.chip1": "Post ready",
@@ -125,14 +125,14 @@ const STRINGS = {
     "price.f1": "A reply to every review, in your voice",
     "price.f2": "QR code and short link to collect reviews",
     "price.f4": "Every reply waits for you by default — or set your own rules",
-    "price.f5": "Everything arrives on WhatsApp, on your phone",
+    "price.f5": "Everything arrives on WhatsApp or Telegram, on your phone",
     "price.cta": "First month free",
     "price.foot": "Your first month is free, no card.",
     "price.foot.y": "Your first month is still free — so your first yearly invoice covers only 10 months, and 11 every year after.",
     "price.add.badge": "Coming soon",
     "price.add.h": "Instagram add-on",
     "price.add.f1": "Posts and stories made from your own photos",
-    "price.add.f2": "Approve on WhatsApp",
+    "price.add.f2": "Approve on WhatsApp or Telegram",
     "price.add.f3": "Ask for an extra post anytime",
     "price.add.cta": "Notify me",
 
@@ -248,7 +248,7 @@ const STRINGS = {
 
     /* ---------- privacy ---------- */
     "priv.h1": "Privacy",
-    "priv.lede": "What we collect, why we use it, and who else sees it. Last updated 6 August 2026.",
+    "priv.lede": "What we collect, why we use it, and who else sees it. Last updated 23 August 2026.",
     "priv.draft.h": "Draft — not yet reviewed by a lawyer.",
     "priv.draft.p": " This page describes our actual data handling honestly, but it has not been checked by a legal professional. Have it reviewed before relying on it.",
 
@@ -277,11 +277,26 @@ const STRINGS = {
     "priv.share.th2": "What reaches them",
     "priv.share.r1": "Your reviews and our published replies. We access your Business Profile as a manager.",
     "priv.share.r2": "Everything you type into either of our forms — signup or contact — including uploaded files.",
-    "priv.share.r3n": "Google Gemini or Anthropic Claude",
+    "priv.share.r3n": "Google Gemini",
     "priv.share.r3": "The text of a review and your style rules, sent so a draft reply can be written. This includes the reviewer's first name where they used one.",
-    "priv.share.r4": "Draft replies sent to you for approval.",
+    "priv.share.r4n": "WhatsApp or Telegram",
+    "priv.share.r4": "Draft replies sent to you for approval — on whichever channel you chose.",
+    "priv.share.r5": "Everything the service stores — reviews, replies, the publishing log — runs on their servers in the European Union and never leaves the EU.",
+    "priv.share.r6": "This website is served through Cloudflare's network. The usual technical data of a visit passes through it; the customer data handled by the service does not.",
     "priv.ai.h": "On the AI part, plainly:",
     "priv.ai.p": " review text written by your customers is sent to a language model to draft a reply. Those reviews are already public on Google, but we think you should know it happens rather than find out later.",
+    "priv.ret.h": "How long we keep it",
+    "priv.ret.i1": "<strong>Form data:</strong> if you never become a customer, we keep signup and contact form data for at most one year, then delete it.",
+    "priv.ret.i2": "<strong>Customer-phase data</strong> — reviews, draft replies, worklists: for as long as the contract runs; we delete it after the contract ends.",
+    "priv.ret.i3": "<strong>The publishing log:</strong> kept permanently, with minimal fields (which review we replied to, when, and with what outcome). It is an operational-integrity record: it is what guarantees a review can never receive two replies.",
+    "priv.ret.i4": "<strong>QR scans:</strong> when a guest scans your QR code we store no IP address and no cookie — only a truncated, irreversible fingerprint of the browser signature, so repeat scans don't distort the numbers.",
+    "priv.ret.i5": "<strong>Backups:</strong> daily, on a 7-day rotation — deleted data ages out of the backups within 7 days at most.",
+    "priv.rights.h": "Your rights",
+    "priv.rights.p1": "Under the GDPR you may at any time request access to your data, rectification, erasure, restriction of processing, a portable copy of your data — and you may object to processing based on legitimate interest. Write to the address below and we will answer without undue delay.",
+    "priv.rights.p2": "If you believe we are mishandling your data, you can lodge a complaint with the Hungarian data protection authority (NAIH, <a href=\"https://naih.hu\">naih.hu</a>).",
+    "priv.ctrl.h": "The data controller",
+    "priv.ctrl.p1": "[Name], sole proprietor (registration number: [•••]) · Szeged · <a href=\"mailto:teamresponsa@gmail.com\">teamresponsa@gmail.com</a>.",
+    "priv.ctrl.p2": "Personal data appearing in your guests' reviews is processed on your behalf, as a data processor — the terms are set out in the <a href=\"dpa.html\">data processing agreement</a>, an annex to the Terms of Service.",
     "priv.contact": "Questions about how we handle your data? <a href=\"kapcsolat.html\">Write to us</a> and we'll answer.",
 
     /* ---------- terms (ÁSZF) ---------- */
@@ -297,6 +312,8 @@ const STRINGS = {
     "aszf.s4.p": "The agreement runs for an indefinite term and the Customer may cancel at any time, with no notice period. Cancellation takes effect at the end of the period already paid for: if the Customer paid on 15 September and cancels on 20 September, the service runs until 15 October. With yearly prepayment, it runs to the end of the prepaid year. Until that date it is worth leaving Responsa's manager access in place — that is what lets us keep replying. The Customer may revoke access at any time, but doing so stops the service immediately, and the period already invoiced is not refunded. Replies already published remain on the Customer's business profile.",
     "aszf.s5.h": "Liability",
     "aszf.s5.p": "Responsa submits drafts for the Customer's approval; the Customer is responsible for the content once approved, and likewise for replies published under an automatic-publishing rule the Customer has asked for. The service depends on Google's availability, for which Responsa is not liable.",
+    "aszf.s7.h": "Data processing",
+    "aszf.s7.p": "Personal data appearing in the Customer's guests' reviews is processed by Responsa on the Customer's behalf, as a data processor. The terms are set out in the <a href=\"dpa.html\">data processing agreement</a>, an inseparable annex to these Terms. Responsa's own data handling is described on the <a href=\"privacy.html\">Privacy</a> page.",
     "aszf.s6.h": "Changes and governing law",
     "aszf.s6.p": "Responsa may amend these terms; the Customer will be notified of material changes in advance. Hungarian law applies to these terms. In a consumer dispute, the Customer may turn to the conciliation board with jurisdiction for their place of residence."
   }
