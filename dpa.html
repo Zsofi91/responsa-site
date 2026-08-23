@@ -79,7 +79,8 @@
         <tbody>
           <tr><td>Az értékelő nyilvánosan megjelenített neve, a csillagszám, az értékelés szövege,
             az értékelés azonosítója és időpontja</td>
-            <td>Értékelés-kivonatok és munkalisták a Responsa szerverén — a szerződés végéig</td></tr>
+            <td>Értékelés-kivonatok, munkalisták és minőségellenőrző lapok a Responsa szerverén —
+            a szerződés végéig</td></tr>
           <tr><td>Az elkészített válaszjavaslatok és a jóváhagyás ténye</td>
             <td>Munkalisták — a szerződés végéig</td></tr>
           <tr><td>Közzétételi napló: melyik értékelésre, mikor, milyen eredménnyel ment ki válasz
@@ -101,7 +102,9 @@
         jóváhagyási szabályok, és az egyeztetett csatornán adott eseti kérések. Beépített korlát:
         az 1–3 csillagos, szöveges értékelésre adott válasz soha nem kerülhet ki automatikusan —
         ezt a rendszer szerkezeti szinten kikényszeríti, a beállításoktól függetlenül. Ha egy
-        utasítás a Responsa megítélése szerint jogszabályba ütközne, jelezzük, mielőtt végrehajtanánk.</p>
+        utasítás a Responsa megítélése szerint jogszabályba ütközne, jelezzük, mielőtt végrehajtanánk.
+        Az utasításokhoz kötöttség a személyes adatok harmadik országba történő továbbítására is
+        kiterjed.</p>
 
       <h2>5. Titoktartás</h2>
       <p>A Responsa az adatokhoz hozzáférő minden személyt titoktartásra kötelez. A szolgáltatást
@@ -110,19 +113,23 @@
 
       <h2>6. Biztonsági intézkedések</h2>
       <ul>
-        <li>Minden adat az Európai Unióban működő szerveren fut (Hetzner), és nem hagyja el az EU-t.</li>
+        <li>A szolgáltatás által tárolt minden adat az Európai Unióban működő szerveren fut
+          (Hetzner), és tárolás közben nem hagyja el az EU-t.</li>
         <li>A szerver kizárólag kulcsos SSH-val érhető el; az adatbázis a nyilvános internetről
           nem elérhető; a nyilvános végpontokat TLS védi.</li>
         <li>A hozzáférési kulcsokat és tokeneket szigorított jogosultságú fájlok és jelszókezelő
           őrzik; bankkártyaadatot a rendszer nem kezel és nem tárol.</li>
-        <li>Napi biztonsági mentés 7 napos rotációval; az adatbázis-helyreállítást rendszeresen
-          próbáljuk.</li>
+        <li>Napi biztonsági mentés 7 napos rotációval; a helyreállítási eljárást éles próbán
+          ellenőriztük.</li>
       </ul>
 
       <h2>7. További adatfeldolgozók</h2>
       <p>A Megrendelő általános felhatalmazást ad az alábbi további adatfeldolgozók igénybevételére.
         A lista változásáról a Responsa előzetesen értesíti a Megrendelőt, aki a változás ellen
-        kifogást emelhet; kifogás esetén a szerződés hátrányos következmény nélkül felmondható.</p>
+        kifogást emelhet; kifogás esetén a szerződés hátrányos következmény nélkül felmondható.
+        A Responsa minden további adatfeldolgozót olyan szerződéses feltételek (jellemzően a
+        szolgáltató saját adatfeldolgozási feltételei) mellett vesz igénybe, amelyek a jelen
+        megállapodáséval egyenértékű adatvédelmi kötelezettségeket írnak elő.</p>
       <div class="tblwrap">
       <table class="tbl">
         <thead>
@@ -157,12 +164,15 @@
       <p>A Responsa észszerű segítséget nyújt a Megrendelőnek az érintetti kérelmek (hozzáférés,
         helyesbítés, törlés, korlátozás, hordozhatóság, tiltakozás) megválaszolásában, valamint az
         adatvédelmi kötelezettségek teljesítésében. A Responsa e megállapodás betartásának
-        igazolásához szükséges információkat kérésre a Megrendelő rendelkezésére bocsátja.</p>
+        igazolásához szükséges információkat kérésre a Megrendelő rendelkezésére bocsátja, és
+        lehetővé teszi a Megrendelő által kezdeményezett ellenőrzéseket (auditokat), azokhoz
+        hozzájárul.</p>
 
       <h2>10. Törlés a szerződés megszűnésekor</h2>
-      <p>A szerződés megszűnésekor — vagy a Megrendelő kérésére korábban — a Responsa törli a
-        Megrendelőhöz tartozó értékelés-kivonatokat, munkalistákat és minőségellenőrző lapokat,
-        és megszünteti a Megrendelő fiókjának aktív kezelését. Két kivétel:</p>
+      <p>A szerződés megszűnésekor — vagy a Megrendelő kérésére korábban — a Responsa a Megrendelő
+        választása szerint visszaadja vagy törli a Megrendelőhöz tartozó értékelés-kivonatokat,
+        munkalistákat, minőségellenőrző lapokat és a jóváhagyói nyilvántartást, és megszünteti a
+        Megrendelő fiókjának aktív kezelését. Két kivétel:</p>
       <ul>
         <li>a közzétételi napló minimális mezőit véglegesen megőrizzük (működési-integritási
           nyilvántartás — a kettős közzététel kizárásának egyetlen biztosítéka);</li>
