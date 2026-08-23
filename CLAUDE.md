@@ -52,9 +52,10 @@ never invent them, and keep `teamresponsa@gmail.com` as the contact.
   never name any other messenger.
 - Pricing shown on this site is the source of truth for the site — don't
   import numbers from anywhere else without Zsófi's say-so.
-- The canonical site URL for the MVP is
-  `https://responsa.responsa-site.workers.dev` — use it for every absolute
-  URL (og:url, canonical, share links) until a custom domain replaces it.
+- The canonical site URL is `https://responsa.hu` (live since 2026-08) — use
+  it for every absolute URL (og:url, canonical, share links). The
+  responsa-site.workers.dev subdomain is only the underlying worker; never
+  put it in page URLs.
 
 ## Workflow
 - NEVER commit or push to `main`. Feature branches + PRs only; Zsófi reviews

@@ -1,6 +1,6 @@
 # Responsa — landing site
 
-The public website of [Responsa](https://responsa.responsa-site.workers.dev): every Google review of
+The public website of [Responsa](https://responsa.hu): every Google review of
 your restaurant answered, in your voice — with an Instagram assistant on the
 way. Hungarian-first, with an English toggle.
 
