@@ -46,10 +46,10 @@ never invent them, and keep `teamresponsa@gmail.com` as the contact.
 
 ## Content rules (don't contradict the product)
 - The Instagram add-on is "coming soon" — never present it as live.
-- The approval channel is WhatsApp OR Telegram — the customer chooses (Zsófi's
-  decision, 2026-08-23). Name both plainly ("WhatsAppon vagy Telegramon, a
+- The approval channel is **Telegram only** (Zsófi's MVP decision, 2026-09-02;
+  WhatsApp is parked and may return later). Name it plainly ("Telegramon, a
   telefonodon"); don't fall back to the old generic "chatben" wording, and
-  never name any other messenger.
+  never name any other messenger — not WhatsApp either.
 - Pricing shown on this site is the source of truth for the site — don't
   import numbers from anywhere else without Zsófi's say-so.
 - The canonical site URL is `https://responsa.hu` (live since 2026-08) — use
