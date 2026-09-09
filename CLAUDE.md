@@ -28,10 +28,10 @@ DESIGN: no `data-i18n` keys, no i18n.js, not in the nav — don't "fix" that),
 — keep it UNLINKED from nav/footer until the add-on launches.
 
 The privacy notice carries retention/rights/controller sections since
-2026-08-23 (added on Zsófi's instruction). The controller block uses marked
-placeholders ("[Név] egyéni vállalkozó (nyilvántartási szám: [•••])") — Zsófi
-operates as an egyéni vállalkozó and fills the real details after registering;
-never invent them, and keep `teamresponsa@gmail.com` as the contact.
+2026-08-23 (added on Zsófi's instruction). The controller/provider lines (privacy,
+DPA, ÁSZF) deliberately say only "a Responsa szolgáltatást nyújtó egyéni
+vállalkozó (Szeged)" — Zsófi adds her name and nyilvántartási szám after
+registering; never invent them, and keep `teamresponsa@gmail.com` as the contact.
 
 ## Conventions
 - Reuse existing CSS patterns before writing new ones: `.section`, `.eyebrow`,

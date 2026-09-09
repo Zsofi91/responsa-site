@@ -8,7 +8,7 @@
   --white:#FFFFFF;
   --ink:#1A2420;
   --ink-soft:#5F6B66;
-  --ink-faint:#94A09B;
+  --ink-faint:#68756F;
   --blue:#2E7CE4;
   --green:#22A06B;
   --heart:#E4544A;
@@ -266,9 +266,6 @@ h2{font-family:var(--disp);font-weight:600;font-size:clamp(30px,4.2vw,46px);
 .box-note{background:#F0F7FF;border:1px solid #CFE3FA}
 .box h3{margin-top:0}
 
-/* screenshot placeholders */
-.shot{background:var(--bg-2);border:2px dashed var(--bg-3);border-radius:14px;
-  padding:34px 24px;text-align:center;color:var(--ink-faint);font-size:14px;margin:14px 0 4px}
 /* real screenshots — stacked, full column width: these are wide strips, and side by side
    would shrink Google's menu labels past reading size */
 .shots{display:grid;gap:18px;margin:14px 0 4px}
