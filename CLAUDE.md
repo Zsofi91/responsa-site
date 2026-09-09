@@ -58,11 +58,18 @@ never invent them, and keep `teamresponsa@gmail.com` as the contact.
   put it in page URLs.
 
 ## Workflow
-- NEVER commit or push to `main`. Feature branches + PRs only; Zsófi reviews
-  and merges everything herself.
+- NEVER commit or push to `main` or `dev`. Feature branches + PRs into `dev`
+  (the default branch); Zsófi reviews and merges everything herself.
+- `main` is release-only and deploys `responsa.hu`: a GitHub ruleset blocks
+  direct pushes, so it only moves via a `dev → main` PR that Zsófi opens after
+  checking the dev preview.
+- Preview: Cloudflare Workers Builds uploads every non-production branch as a
+  preview version aliased by branch name — `dev` is always at
+  `dev-responsa.<subdomain>.workers.dev`, and each PR gets its own
+  `<branch>-responsa.<subdomain>.workers.dev` link in the Cloudflare bot comment.
 - Overnight work: issues labeled `night-shift` are the ticket queue; when
   branches share files, stack PRs (base each branch on the previous ticket's
-  branch, PR targets that base, merge bottom-up).
+  branch, PR targets that base, merge bottom-up into `dev`).
 
 ## Verify before any PR
 ```

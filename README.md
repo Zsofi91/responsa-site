@@ -39,7 +39,15 @@ then open http://localhost:8000 — or just open `index.html` in a browser.
 
 ## Contributing
 
-Work happens on feature branches via pull requests; `main` is merge-only by
-the owner.
+Work happens on feature branches via pull requests into `dev` (the default
+branch). `main` is release-only: it deploys responsa.hu and only moves through
+a `dev → main` pull request merged by the owner.
+
+## Dev preview
+
+Every push to a non-production branch is uploaded as a Cloudflare preview
+version aliased by branch name: `dev` is always at
+`dev-responsa.<subdomain>.workers.dev`, and pull requests get their own
+`<branch>-responsa.<subdomain>.workers.dev` link in the Cloudflare bot comment.
 
 © 2026 Responsa · Szeged
