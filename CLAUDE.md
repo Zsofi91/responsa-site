@@ -21,7 +21,7 @@ from `STRINGS.en` in i18n.js.
 
 ## Pages
 `index.html` (landing), `guide.html` (Google manager-invite setup),
-`privacy.html` (draft — keep its lawyer-review banner), `aszf.html` (terms),
+`privacy.html`, `aszf.html` (terms),
 `dpa.html` (data processing agreement — the ÁSZF's annex; Hungarian-only BY
 DESIGN: no `data-i18n` keys, no i18n.js, not in the nav — don't "fix" that),
 `kapcsolat.html` (contact — embedded Tally form). Planned: `guide-insta.html`

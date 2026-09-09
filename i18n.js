@@ -17,7 +17,7 @@ const STRINGS = {
     /* ---------- hero ---------- */
     "hero.h1a": "More reviews — and a reply to every one, ",
     "hero.h1b": "in your voice",
-    "hero.sub": "We help more of your guests leave reviews — you get a QR code and a short link to put wherever works for you — and we write the reply to every new one. By default, every reply waits for your approval.",
+    "hero.sub": "We help more of your guests leave reviews — we give you a QR code to put wherever works for you — and we write the reply to every new one. By default, every reply waits for your approval.",
     "hero.cta": "Get started",
     "hero.mini": "No password, no owner access, two clicks — and it all runs on Telegram, on your phone.",
     "chip.new": "New review",
@@ -39,7 +39,7 @@ const STRINGS = {
     /* ---------- grow your reviews ---------- */
     "grow.eyebrow": "Grow your reviews",
     "grow.h2": "Grow your reviews — the safe way.",
-    "grow.lede": "You get a QR code and a short link, and you decide where they go: the table, the bill, the receipt, by the door, or your email signature — wherever works for you. One tap takes your guest to your Google review page — restaurant, salon, or clinic alike. No app, no signup.",
+    "grow.lede": "We make you a QR code, and you decide where it goes: the table, the bill, the receipt, by the door, or your email signature — wherever works for you. One tap takes your guest to your Google review page — restaurant, salon, or clinic alike. No app, no signup.",
     "grow.why": "Review count is one of the strongest local-ranking factors — and 38% of diners won't consider a place rated under 4★.",
     "grow.src": "BrightLocal, local consumer research",
 
@@ -123,7 +123,7 @@ const STRINGS = {
     "price.extra.y": "4 or more locations: <strong>328,900 Ft/yr</strong> for the first three, plus <strong>75,900 Ft/yr</strong> for each additional one.",
     "price.incl": "Included in every plan",
     "price.f1": "A reply to every review, in your voice",
-    "price.f2": "QR code and short link to collect reviews",
+    "price.f2": "QR code to collect reviews",
     "price.f4": "Every reply waits for you by default — or set your own rules",
     "price.f5": "Everything arrives on Telegram, on your phone",
     "price.cta": "First month free",
@@ -188,7 +188,7 @@ const STRINGS = {
     "guide.add.s3.h": "Select “Add” at the top left",
     "guide.add.s3.p": "A panel opens asking for an email address.",
     "guide.add.s4.h": "Enter the Responsa email address",
-    "guide.add.s4.p": "We send you the exact address when you sign up — it's in your welcome email, so copy it from there rather than typing it.",
+    "guide.add.s4.p": "We send you the exact address when you sign up.",
     "guide.add.s5.h": "Under “Access”, choose “Manager”",
     "guide.add.s5.p": "Manager, not Owner. Manager is all we need, and it keeps you in full control of the profile.",
     "guide.add.s6.h": "Select “Invite”",
@@ -249,8 +249,6 @@ const STRINGS = {
     /* ---------- privacy ---------- */
     "priv.h1": "Privacy",
     "priv.lede": "What we collect, why we use it, and who else sees it. Last updated 23 August 2026.",
-    "priv.draft.h": "Draft — not yet reviewed by a lawyer.",
-    "priv.draft.p": " This page describes our actual data handling honestly, but it has not been checked by a legal professional. Have it reviewed before relying on it.",
 
     "priv.what.h": "What we collect",
     "priv.what.s1.h": "When you fill in one of our forms",
@@ -314,10 +312,8 @@ const STRINGS = {
     /* ---------- terms (ÁSZF) ---------- */
     "aszf.h1": "Terms of Service",
     "aszf.lede": "The terms for using the Responsa service. Last updated 21 July 2026.",
-    "aszf.draft.h": "Draft — not yet reviewed by a lawyer.",
-    "aszf.draft.p": " This document describes how the service actually works, but it has not been checked by a legal professional. Have it reviewed before relying on it.",
     "aszf.s2.h": "The service",
-    "aszf.s2.p": "Responsa connects to the Customer's Google Business Profile with manager access and drafts replies to new reviews. Every reply is published only after the Customer approves it, unless the Customer has asked in advance for a defined set of replies to publish automatically; the Customer may change or withdraw that setting at any time. Responsa also provides review-collection tools (QR code, short link) in every plan. Responsa never filters or hides reviews.",
+    "aszf.s2.p": "Responsa connects to the Customer's Google Business Profile with manager access and drafts replies to new reviews. Every reply is published only after the Customer approves it, unless the Customer has asked in advance for a defined set of replies to publish automatically; the Customer may change or withdraw that setting at any time. Responsa also provides review-collection tools (QR code) in every plan. Responsa never filters or hides reviews.",
     "aszf.s3.h": "Trial and fees",
     "aszf.s3.p": "Your first month is free, with no card required. Pricing follows the plans published on the website, tiered by number of locations. The Customer may choose monthly billing, or pay for a year up front — in which case the fee for twelve months of service is eleven months' fee, and ten months' fee in the first year, because the free month is included. Prices are in HUF and include VAT unless stated otherwise.",
     "aszf.s4.h": "Term and cancellation",
