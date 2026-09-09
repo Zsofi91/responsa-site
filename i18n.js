@@ -269,7 +269,7 @@ const STRINGS = {
     "priv.what.s2.i2": "The replies we draft, and whether you approved or rejected them",
     "priv.what.s2.i3": "A record of what we published and when",
     "priv.what.s2.i4": "Your Telegram ID, where we send the replies for approval",
-    "priv.what.p1": "We don't use cookies for tracking, we run no analytics, and there are no advertising trackers on this site. Our forms are embedded from Tally, which sets what it needs to work.",
+    "priv.what.p1": "We don't use tracking cookies, and there are no advertising trackers on this site. We measure traffic with Cloudflare's cookieless web analytics — page views, country, browser and device type, referring page — which doesn't identify individuals. Our forms are embedded from Tally, which sets what it needs to work.",
 
     "priv.why.h": "Why we use your data",
     "priv.why.i1": "<strong>To provide the service</strong> — we can't write replies in your voice without your reviews and your service list. Legal basis: performance of a contract.",
@@ -287,7 +287,7 @@ const STRINGS = {
     "priv.share.r4n": "Telegram",
     "priv.share.r4": "The draft replies sent to you for approval.",
     "priv.share.r5": "Everything the service stores — reviews, replies, the publishing log — runs on their servers in the European Union and never leaves the EU.",
-    "priv.share.r6": "This website is served through Cloudflare's network. The usual technical data of a visit passes through it; the customer data handled by the service does not.",
+    "priv.share.r6": "This website is served through Cloudflare's network. The usual technical data of a visit passes through it, and that is what the cookieless visit statistics are built from; the customer data handled by the service does not.",
     "priv.ai.h": "On the AI part, plainly:",
     "priv.ai.p": " review text written by your customers is sent to a language model to draft a reply. Those reviews are already public on Google, but we think you should know it happens rather than find out later.",
     "priv.insta.h": "Instagram add-on (coming soon)",
