@@ -17,7 +17,7 @@ const STRINGS = {
     /* ---------- hero ---------- */
     "hero.h1a": "More reviews — and a reply to every one, ",
     "hero.h1b": "in your voice",
-    "hero.sub": "We help more of your guests leave reviews — we give you a QR code to put wherever works for you — and we write the reply to every new one. By default, every reply waits for your approval.",
+    "hero.sub": "We help more of your guests leave reviews — with a QR code you put wherever works best — and we write the reply to every new one. By default, every reply waits for your approval.",
     "hero.cta": "Get started",
     "hero.mini": "No password, no owner access, two clicks — and it all runs on Telegram, on your phone.",
     "chip.new": "New review",
@@ -159,6 +159,11 @@ const STRINGS = {
     "contact.tally": "PdNk8d",
     "contact.tally.title": "Responsa — contact",
     "contact.note": "We only use your details to answer you — the details are in our <a href=\"privacy.html\">privacy notice</a>. We'll get back to you within a couple of days.",
+    "contact.mail": "If the form doesn't load, just email us at <a href=\"mailto:teamresponsa@gmail.com\">teamresponsa@gmail.com</a>.",
+
+    /* ---------- 404 ---------- */
+    "nf.h1": "This page doesn't exist.",
+    "nf.lede": "It may have moved, or the address has a typo.",
 
     /* ---------- guide ---------- */
     "guide.back": "← Back to home",
@@ -222,6 +227,7 @@ const STRINGS = {
     "guide.help.h": "Stuck anywhere?",
     "guide.help.p": " Send us a message and we'll do it together on a call. This step trips people up more often than anything else, and it's a five-minute fix.",
     "guide.help.link": "Get in touch",
+    "ginsta.help.p": " Send us a message and we'll do it together on a call.",
 
     /* ---------- guide-insta (add-on onboarding — unlinked stub) ---------- */
     "ginsta.h1": "How the Instagram add-on will work",
@@ -248,7 +254,7 @@ const STRINGS = {
 
     /* ---------- privacy ---------- */
     "priv.h1": "Privacy",
-    "priv.lede": "What we collect, why we use it, and who else sees it. Last updated 23 August 2026.",
+    "priv.lede": "What we collect, why we use it, and who else sees it. Last updated 9 September 2026.",
 
     "priv.what.h": "What we collect",
     "priv.what.s1.h": "When you fill in one of our forms",
@@ -305,13 +311,15 @@ const STRINGS = {
     "priv.rights.p1": "Under the GDPR you may at any time request access to your data, rectification, erasure, restriction of processing, a portable copy of your data — and you may object to processing based on legitimate interest. Write to the address below and we will answer without undue delay.",
     "priv.rights.p2": "If you believe we are mishandling your data, you can lodge a complaint with the Hungarian data protection authority (NAIH, <a href=\"https://naih.hu\">naih.hu</a>).",
     "priv.ctrl.h": "The data controller",
-    "priv.ctrl.p1": "[Name], sole proprietor (registration number: [•••]) · Szeged · <a href=\"mailto:teamresponsa@gmail.com\">teamresponsa@gmail.com</a>.",
+    "priv.ctrl.p1": "The controller is the sole proprietor operating the Responsa service, based in Szeged, Hungary · <a href=\"mailto:teamresponsa@gmail.com\">teamresponsa@gmail.com</a>.",
     "priv.ctrl.p2": "Personal data appearing in your guests' reviews is processed on your behalf, as a data processor — the terms are set out in the <a href=\"dpa.html\">data processing agreement</a>, an annex to the Terms of Service.",
     "priv.contact": "Questions about how we handle your data? <a href=\"kapcsolat.html\">Write to us</a> and we'll answer.",
 
     /* ---------- terms (ÁSZF) ---------- */
     "aszf.h1": "Terms of Service",
-    "aszf.lede": "The terms for using the Responsa service. Last updated 21 July 2026.",
+    "aszf.lede": "The terms for using the Responsa service. Last updated 9 September 2026.",
+    "aszf.s1.h": "The provider",
+    "aszf.s1.p": "The service is provided under the Responsa name by a sole proprietor based in Szeged, Hungary. Contact: <a href=\"mailto:teamresponsa@gmail.com\">teamresponsa@gmail.com</a>.",
     "aszf.s2.h": "The service",
     "aszf.s2.p": "Responsa connects to the Customer's Google Business Profile with manager access and drafts replies to new reviews. Every reply is published only after the Customer approves it, unless the Customer has asked in advance for a defined set of replies to publish automatically; the Customer may change or withdraw that setting at any time. Responsa also provides review-collection tools (QR code) in every plan. Responsa never filters or hides reviews.",
     "aszf.s3.h": "Trial and fees",

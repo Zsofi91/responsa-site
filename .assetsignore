@@ -1,0 +1,7 @@
+CLAUDE.md
+README.md
+wrangler.jsonc
+.gitignore
+.assetsignore
+.playwright-mcp/
+.DS_Store
